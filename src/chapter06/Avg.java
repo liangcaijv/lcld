@@ -1,4 +1,4 @@
-package chapter05;
+package chapter06;
 
 public class Avg {
 	public static void main(String[] args) {

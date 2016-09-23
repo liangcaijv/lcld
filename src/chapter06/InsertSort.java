@@ -1,4 +1,4 @@
-package chapter05;
+package chapter06;
 
 /**
  * 插入排序算法实现
