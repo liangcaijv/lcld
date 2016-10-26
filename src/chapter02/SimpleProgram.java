@@ -12,6 +12,8 @@ public class SimpleProgram {
 		num = 3;			//将num赋值为3
 		System.out.println("这是数字" + num);//输出字符串，这里用"+"连接变量
 		System.out.println("我有"+num+"本书!");
+		
+		System.out.println(Integer.MAX_VALUE);
 	}
 
 }

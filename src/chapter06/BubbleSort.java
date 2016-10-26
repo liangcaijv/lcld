@@ -1,5 +1,7 @@
 package chapter06;
 
+import java.util.Arrays;
+
 public class BubbleSort {
 	public static void main(String[] args) {
 		int[] a = new int[]{88,76,90,89,70,95,99,85,66,89};
@@ -14,6 +16,7 @@ public class BubbleSort {
 				}
 			}
 		}
+		System.out.println(Arrays.toString(a));
 	}
 	
 }
