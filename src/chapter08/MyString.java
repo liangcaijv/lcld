@@ -143,19 +143,19 @@ public final class MyString {
 	}
 	
 	public static void main(String[] args) {
-//		MyString myString = new MyString(new char[]{'a','b','我'});
-//		MyString myString2 = new MyString(new char[]{'c','d'});
-// 		MyString myString3 = myString.concat(myString2);
-// 		myString3.print();
-		
-		MyString myString = new MyString(new char[]{'a','.','c','.','d','.','b','我'});
-		MyString[] ss = myString.split('.');
-		for (int i = 0; i < ss.length; i++) {
-			ss[i].print();
-		}
-		
-		MyString str = new MyString(new char[]{'a','b','c'});
-		str.subString(1).print();
-		str.subString(1,str.length()).print();
+////		MyString myString = new MyString(new char[]{'a','b','我'});
+////		MyString myString2 = new MyString(new char[]{'c','d'});
+//// 		MyString myString3 = myString.concat(myString2);
+//// 		myString3.print();
+//		
+//		MyString myString = new MyString(new char[]{'a','.','c','.','d','.','b','我'});
+//		MyString[] ss = myString.split('.');
+//		for (int i = 0; i < ss.length; i++) {
+//			ss[i].print();
+//		}
+//		
+//		MyString str = new MyString(new char[]{'a','b','c'});
+//		str.subString(1).print();
+//		str.subString(1,str.length()).print();
 	}
 }
