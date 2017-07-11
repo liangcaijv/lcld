@@ -4,7 +4,8 @@ public class Case14_LeapYearWithWhile{
   public static void main(String[] args) {
     // 注意将这种可以在循环中重复利用的资源声明在循环的外面
     Scanner in = new Scanner(System.in);
-    while(true){
+    // while(true){
+    for(;;){
         System.out.println("请输入一个大于1582的年份：" );
         int year  = in.nextInt();
         // 如果用户输入-1，终止循环

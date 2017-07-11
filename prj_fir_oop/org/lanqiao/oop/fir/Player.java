@@ -1,4 +1,4 @@
-package org.lanqiao.javase.oop.fir;
+package org.lanqiao.oop.fir;
 
 public enum Player {
 	BLACK(1,false), WHITE(-1,false);

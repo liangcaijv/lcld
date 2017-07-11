@@ -1,4 +1,4 @@
-package org.lanqiao.javase.oop.fir;
+package org.lanqiao.oop.fir;
 
 import java.util.Arrays;
 
