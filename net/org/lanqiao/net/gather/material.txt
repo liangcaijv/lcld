@@ -1,0 +1,14 @@
+htmlunit的参考资料：
+http://www.cnblogs.com/cation/p/3933408.html
+http://jccmjl.iteye.com/blog/1491644
+http://m635674608.iteye.com/blog/2151480
+官网：http://htmlunit.sourceforge.net/
+
+<!-- https://mvnrepository.com/artifact/net.sourceforge.htmlunit/htmlunit -->
+<dependency>
+    <groupId>net.sourceforge.htmlunit</groupId>
+    <artifactId>htmlunit</artifactId>
+    <version>2.27</version>
+</dependency>
+
+

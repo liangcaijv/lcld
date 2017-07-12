@@ -1,4 +1,4 @@
-package org.lanqiao.net;
+package org.lanqiao.net.socket;
 
 import java.io.*;
 import java.net.*;

@@ -65,7 +65,7 @@ public class EmpDaoImpl implements EmpDao{
 	public Employee findById(int id) {
 		String sql = "select * from employees where employee_id=?";
 		QueryRunner runner = new QueryRunner(DbUtil.getDataSource());
-		ResultSetHandler<Employee> rsh = new BeanHandler(Employee.class);
+		ResultSetHandler<Employee> rsh = new BeanHandler<Employee>(Employee.class);
 		try {
 			Employee emp = runner.query(sql, rsh,new Object[]{id});
 			return emp;

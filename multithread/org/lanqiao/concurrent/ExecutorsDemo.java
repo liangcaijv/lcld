@@ -1,10 +1,15 @@
 package org.lanqiao.concurrent;
 
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+
+import com.mysql.jdbc.TimeUtil;
 
 /**
  * Executor和task优先于线程
@@ -20,6 +25,7 @@ public class ExecutorsDemo {
       System.out.println("正在执行任务");
     }, 3, 1, TimeUnit.SECONDS);
     executorService.shutdown();
+    new ExecutorsDemo().new ExecutorDemo().test();
   }
 
   public class ExecutorDemo {
@@ -30,6 +36,21 @@ public class ExecutorsDemo {
       ExecutorService executor2 = Executors.newFixedThreadPool(100);
       //只会有一个活动线程，但是等待队列无边界，它可以保证执行的任务是按顺序的
       ExecutorService executor3 = Executors.newSingleThreadExecutor();
+      Future<String> future =  executor3.submit(new Callable<String>() {
+
+        @Override
+        public String call() throws Exception {
+          TimeUnit.SECONDS.sleep(10);
+          return "hi";
+        }
+        
+      });
+      try {
+        String futureResult = future.get();
+        System.out.println(futureResult);
+      } catch (InterruptedException | ExecutionException e) {
+        future.cancel(true);
+      }
       //可调度的线程池，执行任务的时候可设定延迟及重复周期等参数
       ScheduledExecutorService executor4 = Executors
           .newScheduledThreadPool(1000);
@@ -50,7 +71,6 @@ public class ExecutorsDemo {
         }
       }, 5, 3, TimeUnit.SECONDS);
 
-      executor4 = Executors.newSingleThreadScheduledExecutor();
     }
   }
 
