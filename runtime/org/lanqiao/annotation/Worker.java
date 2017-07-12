@@ -8,6 +8,8 @@ import java.util.concurrent.TimeUnit;
  *
  */
 public class Worker implements IWorker {
+  Worker() {
+  }
   @Override
   @ShowDuration
   public void logic1() {
