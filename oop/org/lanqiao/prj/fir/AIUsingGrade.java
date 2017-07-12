@@ -1,14 +1,18 @@
 package org.lanqiao.prj.fir;
 
 import java.util.Arrays;
-
-public class AI {
+/**
+ * 采用评分策略的ai机器人
+ * @author zhengwei lastmodified 2017年7月11日
+ *
+ */
+public class AIUsingGrade {
 	private GameManager gameManager;
 	private int[][] importance;
 	private Player currentPlayer;
 	private Player anotherPlayer;
 
-	public AI(GameManager gameManager) {
+	public AIUsingGrade(GameManager gameManager) {
 		this.gameManager = gameManager;
 		importance = new int[gameManager.BOUNDARY][gameManager.BOUNDARY];
 		currentPlayer = gameManager.getCurrentPlayer();

@@ -1,11 +1,15 @@
 package org.lanqiao.prj.fir;
 
 import java.util.Scanner;
-
-public class GameUI {
+/**
+ * 五子棋的DOS版界面
+ * @author zhengwei lastmodified 2017年7月11日
+ *
+ */
+public class GameDOSUI {
 	private static GameManager gameManager = new GameManager();
 	private static final Scanner in = new Scanner(System.in);
-	private static final AI ai = new AI(gameManager);
+	private static final AIUsingGrade ai = new AIUsingGrade(gameManager);
 
 	public static void main(String[] args) {
 		// 设置黑棋为AI
