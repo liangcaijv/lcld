@@ -51,9 +51,8 @@ public class WorkerFactory {
       //      --------------guava----------------------------
       return Reflection.newProxy(IWorker.class, new Handler(target));//guava简化了API
     } catch (InstantiationException | IllegalAccessException e) {
-      Throwables.throwIfUnchecked(e);
+      throw new RuntimeException(e);
     }
-    return null;
   }
 
   /**
