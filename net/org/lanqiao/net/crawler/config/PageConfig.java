@@ -1,4 +1,4 @@
-package org.lanqiao.net.gather.config;
+package org.lanqiao.net.crawler.config;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -8,40 +8,45 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
-import java.util.Optional;
 import java.util.Set;
 
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import org.apache.tools.ant.taskdefs.optional.javah.Kaffeh;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
-import org.lanqiao.net.gather.HtmlUnitParserTools;
-import org.lanqiao.net.gather.model.PageBean;
+import org.lanqiao.net.crawler.HtmlUnitParserTools;
+import org.lanqiao.net.crawler.model.PageBean;
 
 import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException;
+import com.gargoylesoftware.htmlunit.Page;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.DomNode;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.gargoylesoftware.htmlunit.util.Cookie;
 
 public class PageConfig {
   public static final int            DEBUG_COUNT     = 10;
-  public static final BrowserVersion BROWSER_VERSION = BrowserVersion.FIREFOX_3;
-  
+  public static final BrowserVersion BROWSER_VERSION = BrowserVersion.FIREFOX_52;
+
   private String                     name;
   private String                     url;
   private boolean                    usable;                                         // 是否可用
-  private boolean                     isAjax;
   private String                     prefix;                                         // 相对路径的前缀
 
   private String                     xlink;
   private String                     splitpath;                                      // 分页
   private List<String>               adverts         = new ArrayList<String>();      // 广告的xpath
   private Map<String, String>        params          = new HashMap<String, String>(); // 关注的页面信息的名字和xpath
+  private boolean                    enableJs;
+  private String                     referer;
+  private Set<Cookie>                cookies;
+  private int                        wait;
+  private String                     nextPageHrefXpath;
+  private int                        pageLimit       = 1;                            // 默认提取一页
 
   private PageConfig() {
 
@@ -142,46 +147,101 @@ public class PageConfig {
   }
 
   public PageBean toPageBean() {
-    PageBean bean = new PageBean();
-    WebClient webClient = HtmlUnitParserTools.buildWebClient(false);
-    HtmlPage hPage;
+    PageBean bean = new PageBean(this);
+    // jdk 7 新用法
+    try (WebClient webClient = HtmlUnitParserTools.buildWebClient(enableJs)) {
+      HtmlPage hPage = dealCookies(webClient);
+      webClient.waitForBackgroundJavaScript(wait);
+      dealParams(bean, hPage);
+      dealXlink(bean, webClient, hPage);
+      bean.setName(name);
+      bean.setUrl(url);
+      return bean;
+    }
+  }
+
+  private HtmlPage dealCookies(WebClient webClient) {
     try {
-      Objects.requireNonNull(this.url);
-      hPage = (HtmlPage) webClient.getPage(this.url);
-      if (isAjax) {
-        bean.setAllContent(hPage.asText());
+      HtmlPage hPage;
+      if (null != referer) {
+        hPage = webClient.getPage(referer);
+        cookies = webClient.getCookieManager().getCookies();
+        webClient.addRequestHeader("Referer", referer);
       }
+      addCookies(webClient); // 添加服务端返回的cookies
+      Objects.requireNonNull(this.url);
+      hPage = webClient.getPage(this.url);
+      return hPage;
     } catch (FailingHttpStatusCodeException | IOException e) {
       throw new RuntimeException(e);
     }
+  }
+
+  private void dealParams(PageBean bean, HtmlPage hPage) {
+    for (String k : params.keySet()) {
+      String nodeValue = HtmlUnitParserTools.getNodeValue(hPage, params.get(k));
+      if (StringUtils.isNotBlank(nodeValue)) {
+        bean.getParams().put(k, nodeValue);
+      }
+    }
+  }
+
+  /**
+   * 循环提取
+   * 
+   * @param bean
+   * @param webClient
+   * @param hPage
+   */
+  private void dealXlink(PageBean bean, WebClient webClient, HtmlPage hPage) {
     if (this.xlink != null) {
-      List<DomNode> linkNodes = (List<DomNode>) hPage.getByXPath(this
-          .getXlink());
-      if (linkNodes != null && !linkNodes.isEmpty()) {
-        Set<String> xlinkSet = new HashSet<String>();
-        for (DomNode node : linkNodes) {
-          String href = node.getAttributes().getNamedItem("href")
-              .getNodeValue();
-          Objects.requireNonNull(this.getPrefix());
-          if (href.startsWith("http:") || href.startsWith("https:")) {
-            continue;
-          } else if (href.startsWith(this.getPrefix())) {
-            xlinkSet.add(href);
-          } else {
-            xlinkSet.add(this.getPrefix() + href);
+      int pageCount = 0;
+      // 循环处理的次数
+      while (pageCount < pageLimit) {
+        // 链接节点
+        List<DomNode> linkNodes = hPage.getByXPath(this.getXlink());
+        if (linkNodes != null && !linkNodes.isEmpty()) {
+          Set<String> xlinkSet = bean.getSubLinks();
+          // ---处理每一个链接节点，提取超链接地址---
+          for (DomNode node : linkNodes) {
+            String href = node.getAttributes().getNamedItem("href")
+                .getNodeValue();
+            if (this.getPrefix() != null && href.startsWith(this.getPrefix())) {
+              xlinkSet.add(href);
+            }
+            // 外部链接
+            else if (href.startsWith("http:") || href.startsWith("https:")) {
+              continue;
+            } else if (this.getPrefix() != null) {
+              xlinkSet.add(this.getPrefix() + href);
+            } else {
+              xlinkSet.add(href);
+            }
           }
-          bean.getSubLinks().addAll(xlinkSet);
+        }
+        pageCount++;
+        // 指向下一页的超链接
+        if (nextPageHrefXpath != null) {
+          try {
+            List<DomNode> nextPageHrefNodes = hPage
+                .getByXPath(nextPageHrefXpath);
+            String nextPageHref = nextPageHrefNodes.get(0).getAttributes()
+                .getNamedItem("href").getNodeValue();
+            hPage = webClient.getPage(nextPageHref);
+          } catch (FailingHttpStatusCodeException | IOException e) {
+            throw new RuntimeException(e);
+          } catch (Exception e) {
+            continue;
+          }
         }
       }
     }
-    for (String k : params.keySet()) {
-      bean.getParams().put(k,
-          HtmlUnitParserTools.getNodeValue(hPage, params.get(k)));
-    }
-    bean.setName(name);
-    bean.setUrl(url);
-    return bean;
+  }
 
+  private void addCookies(WebClient webClient) {
+    for (Cookie cookie : cookies) {
+      webClient.getCookieManager().addCookie(cookie);
+    }
   }
 
   public PageConfig setUrl(String url) {
@@ -204,10 +264,6 @@ public class PageConfig {
     return this;
   }
 
-  public PageConfig setAjax(boolean isAjax) {
-    this.isAjax = isAjax;
-    return this;
-  }
   @Override
   public String toString() {
     return ToStringBuilder.reflectionToString(this,
@@ -216,5 +272,31 @@ public class PageConfig {
 
   public static void main(String[] args) {
     System.out.println(PageConfig.of("ftchinese-list.xml").toPageBean());
+  }
+
+  public PageConfig enableJs(int wait) {
+    this.enableJs = true;
+    this.wait = wait;
+    return this;
+  }
+
+  public PageConfig setReferer(String referer) {
+    this.referer = referer;
+    return this;
+  }
+
+  /**
+   * 循环采集配置
+   * 
+   * @param nextPageHrefXpath
+   *          获取分页超链接的xpath
+   * @param pageLimit
+   *          页码限制
+   * @return
+   */
+  public PageConfig setPaging(String nextPageHrefXpath, int pageLimit) {
+    this.nextPageHrefXpath = nextPageHrefXpath;
+    this.pageLimit = pageLimit;
+    return this;
   }
 }

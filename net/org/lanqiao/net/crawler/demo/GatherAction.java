@@ -1,10 +1,10 @@
-package org.lanqiao.net.gather.demo;
+package org.lanqiao.net.crawler.demo;
 
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-import org.lanqiao.net.gather.config.PageConfig;
-import org.lanqiao.net.gather.model.PageBean;
+import org.lanqiao.net.crawler.config.PageConfig;
+import org.lanqiao.net.crawler.model.PageBean;
 
 public class GatherAction {
   public static void main(String[] args) throws InterruptedException {
