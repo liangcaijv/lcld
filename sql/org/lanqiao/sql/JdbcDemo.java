@@ -6,7 +6,11 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
-
+/**
+ * 最初步的jdbc使用案例
+ * @author zhengwei
+ *
+ */
 public class JdbcDemo {
 	public static void main(String[] args) {
 		Connection conn = null;
@@ -14,12 +18,13 @@ public class JdbcDemo {
 			// 1.register driver
 			DriverManager.registerDriver(new com.mysql.jdbc.Driver());
 //			Class.forName("com.mysql.jdbc.Driver");
-			// 2.url
-			String url = DbConst.url;//协议+地址+端口+SID
-			String username = DbConst.user;
-			String pwd = DbConst.pwd;
+			
+			// 2.url、username、password
+//			String url = DbConst.url;//协议+地址+端口+SID
+//			String username = DbConst.user;
+//			String pwd = DbConst.pwd;
 			// 3.conn
-			conn = DriverManager.getConnection(url, username, pwd);
+			conn = DriverManager.getConnection(DbConst.url, DbConst.user, DbConst.pwd);
 			// 4.Statement
 			Statement stmt = conn.createStatement();
 			// 5.执行sql，如果是查询会得到一个结果集

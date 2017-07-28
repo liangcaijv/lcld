@@ -22,7 +22,7 @@ import org.apache.commons.beanutils.MyResultSetIterator;
 import org.apache.commons.beanutils.ResultSetDynaClass;
 import org.lanqiao.commons.custom.SqlUtil;
 import org.lanqiao.commons.custom.WordDealUtil;
-import org.lanqiao.sql.ijdbc.JdbcOperation;
+import org.lanqiao.sql.ijdbc.JdbcOperationFacade;
 import org.lanqiao.sql.ijdbc.RowMapper;
 import org.lanqiao.sql.ijdbc.exception.DataAccessException;
 import org.slf4j.Logger;
@@ -34,7 +34,7 @@ import org.slf4j.LoggerFactory;
  * @author shadow
  * 
  */
-public class JdbcUtils implements JdbcOperation {
+public class JdbcUtils implements JdbcOperationFacade {
   private Logger           logger = LoggerFactory.getLogger(JdbcUtils.class);
   private DataSource       dataSource;
   private static JdbcUtils jdbcOperation;

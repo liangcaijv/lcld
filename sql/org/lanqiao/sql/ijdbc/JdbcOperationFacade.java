@@ -17,8 +17,8 @@ import org.lanqiao.sql.ijdbc.impl.JdbcUtils;
  * @author JBoss
  * @version 2014.6.17
  */
-public interface JdbcOperation {
-    static JdbcOperation of(DataSourceType dataSourceType){
+public interface JdbcOperationFacade {
+    static JdbcOperationFacade of(DataSourceType dataSourceType){
       return JdbcUtils.of(dataSourceType);
     }
     /**

@@ -15,17 +15,20 @@ enum DbcpConfig implements Config {
 	private int maxActive;
 	private int maxIde;
 	private long maxWait;
-	private static String configFile = "/poolconfig.xml";
+	private static String configFile = "poolconfig.xml";
 
 	private DbcpConfig() {
 		init();
 	}
 
 
+	/**
+	 * 提取XML中的配置
+	 */
 	private void init() {
 		Document doc = null;
 		try {
-			doc = new SAXBuilder().build(getClass().getResource(configFile));
+			doc = new SAXBuilder().build(getClass().getResourceAsStream(configFile));
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}

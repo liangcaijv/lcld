@@ -22,7 +22,7 @@ import org.lanqiao.sql.ijdbc.exception.UnImplementionException;
  * DataSource的主要作用是提供数据库连接,此处提供的连接实例实际上是Connection对象的一个代理对象<br>
  * 主要针对Connection的close方法做替代,不是直接关闭连接,而是回收到一个队列中,供重复使用<br>
  * 
- * @author JBOSS
+ * @author zhengwei
  * 
  */
 enum SimpleDataSource implements DataSource {

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.lanqiao.commons.custom.StringUtils;
-import org.lanqiao.sql.ijdbc.JdbcOperation;
+import org.lanqiao.sql.ijdbc.JdbcOperationFacade;
 import org.lanqiao.sql.ijdbc.impl.DataSourceType;
 
 /**
@@ -18,7 +18,7 @@ import org.lanqiao.sql.ijdbc.impl.DataSourceType;
  * 
  */
 public class ConvenientTools {
-	private static JdbcOperation jdbcUtils = JdbcOperation.of(DataSourceType.DBCP);
+	private static JdbcOperationFacade jdbcUtils = JdbcOperationFacade.of(DataSourceType.DBCP);
 
 	/**
 	 * 根据一个只查询两个字段的sql的查询结构构造一段html代码片段<br>

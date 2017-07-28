@@ -14,7 +14,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
-
+/**
+ * 模拟登录
+ * @author zhengwei
+ *
+ */
 public class JDBCDemo3 {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
@@ -39,11 +43,17 @@ public class JDBCDemo3 {
       String username = DbConst.user;
       String pwd_db = DbConst.pwd;
       conn = DriverManager.getConnection(url, username, pwd_db);
-      /*Statement stmt = conn.createStatement();
-      String sql = "select * from users where name='"+name+"' and pwd='"+pwd+"'";
-      System.out.println("sql==="+sql);*/
-      String sql = "select * from users where name=? and pwd=?";
-      //      sql = "insert into employees values(?,?,?,?)";
+      
+      Statement stmt = conn.createStatement();
+      // name: ' or 1=1 --
+      // select * from user where name ='' or 1=1 --' and pwd=''
+//      String sql = "select * from user where name='"+name+"' "
+//          + "and pwd='"+pwd+"'";
+//      System.out.println("sql==="+sql);
+      
+      String sql = "select * from users where name=? and pwd=? limit 1";
+//            sql = "insert into employees values(?,?,?,?)";
+      // 不再是statement
       PreparedStatement pstmt = conn.prepareStatement(sql);
       pstmt.setString(1, name);
       pstmt.setString(2, pwd);

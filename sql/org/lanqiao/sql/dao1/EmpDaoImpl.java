@@ -8,7 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.lanqiao.sql.util1.DbUtil;
+import org.lanqiao.sql.util1.JdbcSimpleFacadeUtil;
 
 public class EmpDaoImpl implements EmpDao{
 
@@ -17,7 +17,7 @@ public class EmpDaoImpl implements EmpDao{
 		Connection conn = null;
 		try {
 			String sql = "insert into employees (employee_id,first_name,last_name,email,phone_number,hire_date,salary) values(empSeq.nextval,?,?,?,?,?,?)";
-			conn = DbUtil.getConnection();
+			conn = JdbcSimpleFacadeUtil.getConnection();
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, emp.getFirst_name());
 			pstmt.setString(2, emp.getLast_name());
@@ -29,13 +29,13 @@ public class EmpDaoImpl implements EmpDao{
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally{
-			DbUtil.freeConnection(conn);
+			JdbcSimpleFacadeUtil.freeConnection(conn);
 		}
 	}
 
 	@Override
 	public void delete(Employee emp) {
-		DbUtil.update("delete from employees where employee_id="+emp.getEmployee_id());
+		JdbcSimpleFacadeUtil.update("delete from employees where employee_id="+emp.getEmployee_id());
 	}
 
 	@Override
@@ -43,7 +43,7 @@ public class EmpDaoImpl implements EmpDao{
 		Connection conn = null;
 		try {
 			String sql = "update employees set first_name=?,last_name=?,email=?,phone_number=?,hire_date=?,salary=? where employee_id=?";
-			conn = DbUtil.getConnection();
+			conn = JdbcSimpleFacadeUtil.getConnection();
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, emp.getFirst_name());
 			pstmt.setString(2, emp.getLast_name());
@@ -56,7 +56,7 @@ public class EmpDaoImpl implements EmpDao{
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally{
-			DbUtil.freeConnection(conn);
+			JdbcSimpleFacadeUtil.freeConnection(conn);
 		}
 	}
 
@@ -66,7 +66,7 @@ public class EmpDaoImpl implements EmpDao{
 		ResultSet rs;
 		Employee emp = new Employee();
 		try {
-			rs = DbUtil.exeQuery(sql);
+			rs = JdbcSimpleFacadeUtil.exeQuery(sql);
 			while(rs.next()){
 				emp.setEmployee_id(rs.getInt(1));
 				emp.setFirst_name(rs.getString(2));
@@ -87,7 +87,7 @@ public class EmpDaoImpl implements EmpDao{
 		ResultSet rs;
 		List<Employee> list = new ArrayList<Employee>();
 		try {
-			rs = DbUtil.exeQuery(sql);
+			rs = JdbcSimpleFacadeUtil.exeQuery(sql);
 			while(rs.next()){
 				Employee emp = new Employee();
 				emp.setEmployee_id(rs.getInt(1));

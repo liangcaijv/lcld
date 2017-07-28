@@ -12,9 +12,9 @@ import javax.sql.DataSource;
 import javax.sql.RowSet;
 import javax.sql.rowset.CachedRowSet;
 
-public class DbUtil {
+public class JdbcSimpleFacadeUtil {
 	private static DbPool pool = DbcpPool.me;
-
+	private JdbcSimpleFacadeUtil(){} 
   public static RowSet exeQuery(String sql) {
 		Connection conn = null;
 		CachedRowSet crs = null;
@@ -164,4 +164,5 @@ public class DbUtil {
 	public static DataSource getDataSource(){
 		return pool.getDataSource();
 	}
+
 }

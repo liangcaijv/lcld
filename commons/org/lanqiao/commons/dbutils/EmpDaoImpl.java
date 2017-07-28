@@ -9,7 +9,7 @@ import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.ResultSetHandler;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
-import org.lanqiao.sql.util1.DbUtil;
+import org.lanqiao.sql.util1.JdbcSimpleFacadeUtil;
 
 public class EmpDaoImpl implements EmpDao{
 
@@ -18,7 +18,7 @@ public class EmpDaoImpl implements EmpDao{
 		Connection conn = null;
 		try {
 			String sql = "insert into employees (employee_id,first_name,last_name,email,phone_number,hire_date,salary) values(empSeq.nextval,?,?,?,?,?,?)";
-			conn = DbUtil.getConnection();
+			conn = JdbcSimpleFacadeUtil.getConnection();
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, emp.getFirst_name());
 			pstmt.setString(2, emp.getLast_name());
@@ -30,13 +30,13 @@ public class EmpDaoImpl implements EmpDao{
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally{
-			DbUtil.freeConnection(conn);
+			JdbcSimpleFacadeUtil.freeConnection(conn);
 		}
 	}
 
 	@Override
 	public void delete(Employee emp) {
-			DbUtil.update("delete from employees where employee_id="+emp.getEmployee_id());
+			JdbcSimpleFacadeUtil.update("delete from employees where employee_id="+emp.getEmployee_id());
 	}
 
 	@Override
@@ -44,7 +44,7 @@ public class EmpDaoImpl implements EmpDao{
 		Connection conn = null;
 		try {
 			String sql = "update employees set first_name=?,last_name=?,email=?,phone_number=?,hire_date=?,salary=? where employee_id=?";
-			conn = DbUtil.getConnection();
+			conn = JdbcSimpleFacadeUtil.getConnection();
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			pstmt.setString(1, emp.getFirst_name());
 			pstmt.setString(2, emp.getLast_name());
@@ -57,14 +57,14 @@ public class EmpDaoImpl implements EmpDao{
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		} finally{
-			DbUtil.freeConnection(conn);
+			JdbcSimpleFacadeUtil.freeConnection(conn);
 		}
 	}
 
 	@Override
 	public Employee findById(int id) {
 		String sql = "select * from employees where employee_id=?";
-		QueryRunner runner = new QueryRunner(DbUtil.getDataSource());
+		QueryRunner runner = new QueryRunner(JdbcSimpleFacadeUtil.getDataSource());
 		ResultSetHandler<Employee> rsh = new BeanHandler<Employee>(Employee.class);
 		try {
 			Employee emp = runner.query(sql, rsh,new Object[]{id});
@@ -77,7 +77,7 @@ public class EmpDaoImpl implements EmpDao{
 	
 	public List<Employee> findAll(){
 		String sql = "select * from employees ";
-		QueryRunner runner = new QueryRunner(DbUtil.getDataSource());
+		QueryRunner runner = new QueryRunner(JdbcSimpleFacadeUtil.getDataSource());
 		ResultSetHandler h = new BeanListHandler(Employee.class);
 		try {
 			List<Employee> list = (List<Employee>) runner.query(sql, h);

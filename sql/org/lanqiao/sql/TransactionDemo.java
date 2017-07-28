@@ -18,7 +18,7 @@ public class TransactionDemo {
       String pwd = DbConst.pwd;
       conn = DriverManager.getConnection(url, username, pwd);// 3.conn
       String sql = "insert into users name(id,name) values(?,?)";
-      conn.setAutoCommit(false);
+      conn.setAutoCommit(false);// 取消自动提交
 
       PreparedStatement pstmt = conn.prepareStatement(sql);
       pstmt.setInt(1, 6);
