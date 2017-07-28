@@ -1,85 +1,102 @@
 package org.lanqiao.iodemo;
 
 import java.io.File;
-import java.util.LinkedHashSet;
+import java.io.IOException;
+import java.nio.file.DirectoryStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class FileTree {
-	private LinkedHashSet<FileInfo> fileInfos = new LinkedHashSet<FileTree.FileInfo>();
-	private File root;
+  private final Queue<FileInfo> fileInfos = new LinkedList<FileInfo>();
+  private File                  root;
+  private int                   level     = Integer.MAX_VALUE;
 
-	public FileTree(File root) throws Exception {
-		super();
-		this.root = root;
-		addToSet(root);
-	}
-	public void print(){
-		for(FileInfo info:fileInfos){
-			for(int i=0;i<info.getLevel()*4;i++){
-				System.out.print("-");
-			}
-			System.out.println(info.getName());
-		}
-	}
-	private void addToSet(File r) throws Exception {
-		fileInfos.add(new FileInfo(getLevel(root, r), r.getName()));
-		File[] list = r.listFiles();
-		for(File f:list){
-			int l = getLevel(root, f);
-			if(f.isFile())
-				fileInfos.add(new FileInfo(l, f.getName()));
-			else{
-				if(l<=4)
-					addToSet(f);
-			}
-		}
-	}
+  public FileTree(File root) {
+    super();
+    this.root = root;
+  }
 
-	private static int getLevel(File root, File f) throws Exception {
-		if (f == root)
-			return 0;
-		int level = 1;
-		try {
-			while (!f.getParentFile() .equals(root)) {
-//				System.out.println(f);
-				level++;
-				f = f.getParentFile();
-			}
-		} catch (Exception e) {
-			throw e;
-		}
-		return level;
-	}
+  public FileTree(File root, int level) {
+    super();
+    this.root = root;
+    this.level = level;
+  }
 
-	class FileInfo {
-		private int level;
-		private String name;
+  public FileTree init() {
+    addToQueue(root);
+    return this;
+  }
 
-		public FileInfo(int level, String name) {
-			super();
-			this.level = level;
-			this.name = name;
-		}
+  public void print() {
+    for (FileInfo info : fileInfos) {
+      for (int i = 0; i < info.level; i++) {
+        System.out.print("   ");
+      }
+      System.out.println("├──" + info.name);
+    }
+  }
 
-		public int getLevel() {
-			return level;
-		}
+  private void addToQueue(File r) {
+    if (r.isHidden()) {
+      return ;
+    }
+    int _level = getLevel(r);
+    //  小于等于控制层数，且不是隐藏文件，先将当前文件入队列
+    if (_level <= this.level) {
+      fileInfos.add(new FileInfo(_level, r.getName()));
+    }
 
-		public void setLevel(int level) {
-			this.level = level;
-		}
+    // 还可以处理一层且是目录
+    if (_level < this.level && r.isDirectory()) {
+      dealWithSubFile(r);
+    }
 
-		public String getName() {
-			return name;
-		}
+  }
 
-		public void setName(String name) {
-			this.name = name;
-		}
-	}
+  private void dealWithSubFile(File r) {
+    try {
+      DirectoryStream<Path> dirStream = Files.newDirectoryStream(r.toPath());
+      // 遍历目录
+      dirStream.forEach((path) -> {
+        File _file = path.toFile();
+        if (_file.isFile())
+          fileInfos.add(new FileInfo(getLevel(_file), _file.getName()));
+        else
+          addToQueue(_file);
+      });
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    }
+  }
 
-	public static void main(String[] args) throws Exception {
-//		System.out.println(getLevel(new File("F:\\bluedot\\产品1.0"), new File(
-//				"F:\\bluedot\\产品1.0\\初级课程\\01Java起步\\课堂案例")));
-		new FileTree(new File("F:\\bluedot\\产品1.0\\中级课程")).print();
-	}
+  private int getLevel(File f) {
+    if (f == root)
+      return 0;
+    int level = 1;
+    while (!f.getParentFile().equals(root)) {
+      level++;
+      f = f.getParentFile();
+    }
+    return level;
+  }
+
+  class FileInfo {
+    int    level;
+    String name;
+
+    public FileInfo(int level, String name) {
+      super();
+      this.level = level;
+      this.name = name;
+    }
+  }
+
+  public static void main(String[] args) throws Exception {
+    //		System.out.println(getLevel(new File("F:\\bluedot\\产品1.0"), new File(
+    //				"F:\\bluedot\\产品1.0\\初级课程\\01Java起步\\课堂案例")));
+    new FileTree(new File("/Users/zhengwei/workspace/JavaAllIn"))
+        .init().print();
+  }
 }

@@ -16,7 +16,7 @@ public class StaleData {
     //这里延迟1毫秒，使得结果明显
     TimeUnit.MILLISECONDS.sleep(1);
     i++;
-    System.out.println(i);
+    // System.out.println(i);
   }
 
   public static void main(String[] args) throws InterruptedException {

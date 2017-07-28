@@ -9,6 +9,9 @@ import org.lanqiao.sql.ijdbc.exception.UnImplementionException;
  *
  */
 class DataSourceFactory {
+  
+  private DataSourceFactory(){}
+  
   public static DataSource get(DataSourceType type ) {
     switch (type) {
     case DBCP:

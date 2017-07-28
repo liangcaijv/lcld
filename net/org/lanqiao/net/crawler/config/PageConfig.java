@@ -4,10 +4,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Queue;
 import java.util.Set;
 
 import org.apache.commons.lang3.ObjectUtils;
@@ -19,12 +20,14 @@ import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import org.lanqiao.net.crawler.HtmlUnitParserTools;
 import org.lanqiao.net.crawler.model.PageBean;
+import org.w3c.dom.DOMException;
 
 import com.gargoylesoftware.htmlunit.BrowserVersion;
 import com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException;
-import com.gargoylesoftware.htmlunit.Page;
 import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.html.DomElement;
 import com.gargoylesoftware.htmlunit.html.DomNode;
+import com.gargoylesoftware.htmlunit.html.HtmlLink;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import com.gargoylesoftware.htmlunit.util.Cookie;
 
@@ -43,10 +46,12 @@ public class PageConfig {
   private Map<String, String>        params          = new HashMap<String, String>(); // 关注的页面信息的名字和xpath
   private boolean                    enableJs;
   private String                     referer;
-  private Set<Cookie>                cookies;
+
   private int                        wait;
   private String                     nextPageHrefXpath;
   private int                        pageLimit       = 1;                            // 默认提取一页
+  /** 用户点击操作队列 */
+  private Queue<String>              clickQueue      = new LinkedList<String>();
 
   private PageConfig() {
 
@@ -151,26 +156,65 @@ public class PageConfig {
     // jdk 7 新用法
     try (WebClient webClient = HtmlUnitParserTools.buildWebClient(enableJs)) {
       HtmlPage hPage = dealCookies(webClient);
-      webClient.waitForBackgroundJavaScript(wait);
+      // 点击操作完成后将形成新的page
+      hPage = dealClickQueue(bean, hPage);
+      // 再处理新page关注的参数以及子链接
       dealParams(bean, hPage);
-      dealXlink(bean, webClient, hPage);
+      dealXlink(bean, hPage);
       bean.setName(name);
-      bean.setUrl(url);
+      bean.setUrl(hPage.getUrl().toString());
       return bean;
     }
   }
 
+  /**
+   * 处理用户点击操作队列
+   * 
+   * @param bean
+   * @param hPage
+   * @return
+   */
+  private HtmlPage dealClickQueue(PageBean bean, HtmlPage hPage) {
+    HtmlPage newPage = hPage;
+    try {
+      while (!this.clickQueue.isEmpty()) {
+        String xpath = clickQueue.poll();
+        List<DomElement> nodes = newPage.getByXPath(xpath);
+        if (nodes != null && nodes.size() > 0) {
+          DomElement link = nodes.get(0);
+          newPage = link.click();
+          hPage.getWebClient().waitForBackgroundJavaScript(wait);
+        }
+      }
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+    return newPage;
+  }
+
+  /**
+   * 先访问referer获得cookie，将cookies全部加入新请求，请求url返回一个htmlPage
+   * 
+   * @param webClient
+   * @param url
+   * @param referer
+   * @return
+   */
   private HtmlPage dealCookies(WebClient webClient) {
     try {
       HtmlPage hPage;
+      // 通过referer获得cookie，添加到webClient里面
       if (null != referer) {
         hPage = webClient.getPage(referer);
-        cookies = webClient.getCookieManager().getCookies();
+        Set<Cookie> cookies = webClient.getCookieManager().getCookies();
         webClient.addRequestHeader("Referer", referer);
+        addCookies(webClient, cookies); // 添加服务端返回的cookies
       }
-      addCookies(webClient); // 添加服务端返回的cookies
-      Objects.requireNonNull(this.url);
-      hPage = webClient.getPage(this.url);
+      //      url必须不能为空
+      Objects.requireNonNull(url);
+      //      如果没有referer，直接请求url获得hPage
+      hPage = webClient.getPage(url);
+      webClient.waitForBackgroundJavaScript(wait);
       return hPage;
     } catch (FailingHttpStatusCodeException | IOException e) {
       throw new RuntimeException(e);
@@ -193,10 +237,10 @@ public class PageConfig {
    * @param webClient
    * @param hPage
    */
-  private void dealXlink(PageBean bean, WebClient webClient, HtmlPage hPage) {
+  private void dealXlink(PageBean bean, HtmlPage hPage) {
     if (this.xlink != null) {
       int pageCount = 0;
-      // 循环处理的次数
+      // 循环处理的页数
       while (pageCount < pageLimit) {
         // 链接节点
         List<DomNode> linkNodes = hPage.getByXPath(this.getXlink());
@@ -220,14 +264,17 @@ public class PageConfig {
           }
         }
         pageCount++;
-        // 指向下一页的超链接
+        // 指向下一页的超链接xpath
         if (nextPageHrefXpath != null) {
           try {
-            List<DomNode> nextPageHrefNodes = hPage
+            List<HtmlLink> nextPageHrefNodes = hPage
                 .getByXPath(nextPageHrefXpath);
-            String nextPageHref = nextPageHrefNodes.get(0).getAttributes()
-                .getNamedItem("href").getNodeValue();
-            hPage = webClient.getPage(nextPageHref);
+            HtmlLink pagerLink = nextPageHrefNodes.get(0);
+            //  “下一页”超链接，模拟进行点击
+            System.out.print("-----下一页来咯：----");
+            hPage = pagerLink.click();
+            System.out.println(hPage.getUrl().toString());
+            hPage.getWebClient().waitForBackgroundJavaScript(wait);
           } catch (FailingHttpStatusCodeException | IOException e) {
             throw new RuntimeException(e);
           } catch (Exception e) {
@@ -238,7 +285,7 @@ public class PageConfig {
     }
   }
 
-  private void addCookies(WebClient webClient) {
+  private static void addCookies(WebClient webClient, Set<Cookie> cookies) {
     for (Cookie cookie : cookies) {
       webClient.getCookieManager().addCookie(cookie);
     }
@@ -297,6 +344,11 @@ public class PageConfig {
   public PageConfig setPaging(String nextPageHrefXpath, int pageLimit) {
     this.nextPageHrefXpath = nextPageHrefXpath;
     this.pageLimit = pageLimit;
+    return this;
+  }
+
+  public PageConfig click(String xpath) {
+    this.clickQueue.offer(xpath);
     return this;
   }
 }

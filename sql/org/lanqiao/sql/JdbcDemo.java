@@ -23,7 +23,7 @@ public class JdbcDemo {
 			// 4.Statement
 			Statement stmt = conn.createStatement();
 			// 5.执行sql，如果是查询会得到一个结果集
-			ResultSet rs = stmt.executeQuery("select table_name as tName, tablespace_name as ts_name from user_tables");
+			ResultSet rs = stmt.executeQuery("select * from user");
 			//元数据
 			ResultSetMetaData md =  rs.getMetaData();
 			int columnCount = md.getColumnCount();
@@ -34,7 +34,7 @@ public class JdbcDemo {
 			// 6.处理结果集result
 			while (rs.next()) {
 //				System.out.println(rs.getString("table_name")+"\t"+rs.getString("tablespace_name"));
-				System.out.println(rs.getString("tName")+"\t"+rs.getString("ts_name"));
+				System.out.println(rs.getString("id")+"\t"+rs.getString("username"));
 				System.out.println(rs.getString(1)+"\t"+rs.getString(2));
 				System.out.println("----------------------------------");
 			}
