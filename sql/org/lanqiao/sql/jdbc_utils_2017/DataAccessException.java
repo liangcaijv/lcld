@@ -1,4 +1,4 @@
-package org.lanqiao.sql.ijdbc.exception;
+package org.lanqiao.sql.jdbc_utils_2017;
 
 import java.sql.SQLException;
 /**
