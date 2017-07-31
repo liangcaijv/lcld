@@ -14,6 +14,7 @@ import java.util.logging.Logger;
 
 import javax.sql.DataSource;
 
+import com.google.common.reflect.Reflection;
 import org.lanqiao.sql.ijdbc.exception.UnImplementionException;
 
 /**
@@ -107,10 +108,11 @@ enum SimpleDataSource implements DataSource {
      * @return
      */
     public static Connection getProxy(Object o, BlockingQueue<Connection> pool) {
-      Object proxed = Proxy.newProxyInstance(o.getClass().getClassLoader(),
+      /*Object proxed = Proxy.newProxyInstance(o.getClass().getClassLoader(),
           new Class[] { Connection.class }, new ConnectionProxy((Connection) o,
               pool));
-      return (Connection) proxed;
+      return (Connection) proxed;*/
+      return Reflection.newProxy(Connection.class,new ConnectionProxy((Connection) o,pool));
     }
 
     /**
