@@ -8,7 +8,7 @@ import org.lanqiao.sql.ijdbc.exception.UnImplementionException;
  * @author JBoss
  *
  */
-class DataSourceFactory {
+public class DataSourceFactory {
   
   private DataSourceFactory(){}
   
