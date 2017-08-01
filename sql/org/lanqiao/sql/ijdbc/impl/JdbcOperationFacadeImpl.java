@@ -34,14 +34,14 @@ import org.slf4j.LoggerFactory;
  * @author shadow
  * 
  */
-public class JdbcUtils implements JdbcOperationFacade {
-  private Logger           logger = LoggerFactory.getLogger(JdbcUtils.class);
+public class JdbcOperationFacadeImpl implements JdbcOperationFacade {
+  private Logger           logger = LoggerFactory.getLogger(JdbcOperationFacadeImpl.class);
   private DataSource       dataSource;
-  private static JdbcUtils jdbcOperation;
+  private static JdbcOperationFacadeImpl jdbcOperation;
 
-  public static JdbcUtils of(DataSourceType dataSourceType) {
+  public static JdbcOperationFacadeImpl of(DataSourceType dataSourceType) {
     if (jdbcOperation == null) {
-      jdbcOperation = new JdbcUtils();
+      jdbcOperation = new JdbcOperationFacadeImpl();
     }
     jdbcOperation.dataSource = DataSourceFactory.get(dataSourceType);
     return jdbcOperation;
@@ -283,11 +283,7 @@ public class JdbcUtils implements JdbcOperationFacade {
         list.add(newInstance);
       }
       // -----------将结果集转为List end---------------
-    } catch (IllegalAccessException e) {
-      throw new RuntimeException(e);
-    } catch (InvocationTargetException e) {
-      throw new RuntimeException(e);
-    } catch (InstantiationException e) {
+    } catch (IllegalAccessException | InvocationTargetException | InstantiationException e) {
       throw new RuntimeException(e);
     } catch (SQLException e) {
       throw new DataAccessException(e);
@@ -392,6 +388,7 @@ public class JdbcUtils implements JdbcOperationFacade {
       Object... params) {
     ResultSet rs = null;
     try {
+//      调用已实现的获取ResultSet的方法
       rs = queryForResultSet(sql, params);
       ResultSetDynaClass rsdc = new ResultSetDynaClass(rs);
       MyResultSetIterator rows = new MyResultSetIterator(rsdc);

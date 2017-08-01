@@ -8,7 +8,7 @@ import java.lang.reflect.*;
  * @author zw
  * 
  */
-public class array2 {
+public class _04_DynamicArray2 {
 	public static void main(String args[]) {
 		int dims[] = new int[] { 5, 10, 15 };
 		Object arr = Array.newInstance(Integer.TYPE, dims);

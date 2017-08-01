@@ -14,6 +14,7 @@ import java.util.logging.Logger;
 
 import javax.sql.DataSource;
 
+import com.google.common.reflect.Reflection;
 import org.lanqiao.sql.ijdbc.exception.UnImplementionException;
 
 /**
@@ -35,10 +36,13 @@ enum SimpleDataSource implements DataSource {
       Class.forName(Config.getDriver());
       //初始化固定数量的连接到连接池
       for (int i = 0; i < Config.getPoolSize(); i++) {
-        Connection con = DriverManager.getConnection(Config.getUrl(),
+        // 创建原始的connection
+        Connection conn = DriverManager.getConnection(Config.getUrl(),
             Config.getName(), Config.getPwd());
-        con = ConnectionProxy.getProxy(con, pool);// 获取代理的对象
-        pool.add(con);// 添加/缓存代理对象
+        //        创建代理对象
+        Connection connProxy = ConnectionProxy.getProxy(conn, pool);// 获取代理的对象
+        // 添加/缓存代理对象
+        pool.add(connProxy);
       }
     } catch (Exception e) {
       throw new RuntimeException(e.getMessage(), e);
@@ -75,7 +79,7 @@ enum SimpleDataSource implements DataSource {
   /** 从池中取一个连接对象 */
   public Connection getConnection() throws SQLException {
     try {
-      return pool.take();//提取并移除队列中的一个对象
+      return pool.take();//提取并移除队列中的一个对象,是一个代理对象
     } catch (InterruptedException e) {
       Thread.currentThread().interrupt();
     }
@@ -91,7 +95,7 @@ enum SimpleDataSource implements DataSource {
   private static class ConnectionProxy implements InvocationHandler {
 
     //原始连接
-    private Connection                conn;
+    private Connection conn;
     private BlockingQueue<Connection> pool;
 
     private ConnectionProxy(Connection conn, BlockingQueue<Connection> pool) {
@@ -107,10 +111,12 @@ enum SimpleDataSource implements DataSource {
      * @return
      */
     public static Connection getProxy(Object o, BlockingQueue<Connection> pool) {
-      Object proxed = Proxy.newProxyInstance(o.getClass().getClassLoader(),
+      /*Object proxed = Proxy.newProxyInstance(o.getClass().getClassLoader(),
           new Class[] { Connection.class }, new ConnectionProxy((Connection) o,
               pool));
-      return (Connection) proxed;
+       */
+//      return (Connection) proxed;
+      return Reflection.newProxy(Connection.class,new ConnectionProxy((Connection) o,pool));
     }
 
     /**
@@ -118,10 +124,13 @@ enum SimpleDataSource implements DataSource {
      */
     public Object invoke(Object proxy, Method method, Object[] args)
         throws Throwable {
+      // 实际上handler能代理目标对象上的所有方法，即所有方法的调用都会到这里来
+      //      但是我们只改变close方法的行为
       if (method.getName().equals("close")) {
-        pool.put((Connection) proxy);//回收
+        pool.put((Connection) proxy);//回收代理对象，原生对象不做任何处理
         return null;//本来close就没有返回值
-      } else {
+      } else { // close之外的其他方法
+      //        直接返回其方法调用即可
         return method.invoke(conn, args);
       }
     }

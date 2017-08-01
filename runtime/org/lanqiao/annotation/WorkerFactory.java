@@ -32,13 +32,15 @@ public class WorkerFactory {
       public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         ShowDuration ann = method.getAnnotation(ShowDuration.class);
         Object result;
+//        ann.value()获得注解上的参数值
         if (ann != null && ann.value()) {
           long startTime = System.nanoTime();
-          // ... the code being measured ...
+          // ... 反射调用目标方法 ...
           result = method.invoke(target, args);
           long estimatedTime = System.nanoTime() - startTime;
           System.out.println(method.toGenericString() + "-持续：" + TimeUnit.NANOSECONDS.toSeconds(estimatedTime) + "秒");
         } else {
+//          方法上面没有该注解或值为false，就直接调用被代理对象的方法
           result = method.invoke(target, args);
         }
         return result;

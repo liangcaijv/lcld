@@ -15,10 +15,9 @@ import org.slf4j.LoggerFactory;
 public enum JDBCFacadeImpl implements JDBCFacade {
   me;
 
-  static final Logger             LOGGER    = LoggerFactory
-                                                .getLogger(JDBCFacadeImpl.class);
+  static final Logger LOGGER = LoggerFactory.getLogger(JDBCFacadeImpl.class);
   final BlockingQueue<Connection> connQueue = new LinkedBlockingDeque<Connection>(
-                                                10);
+      10);
 
   private JDBCFacadeImpl() {
     init();
