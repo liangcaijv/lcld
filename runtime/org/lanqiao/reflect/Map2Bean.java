@@ -69,25 +69,6 @@ public class Map2Bean {
 
   public static void main(String[] args) throws Exception {
     System.out.println(upcaseFirstLetter("name"));
-    class Student {
-      String name;
-      int age;
-      String other;
-      public void setName(String name) {
-        this.name = name;
-      }
-
-      public void setAge(int age) {
-        this.age = age;
-      }
-
-      @Override
-      public String toString() {
-        return "Student [name=" + name + ", age=" + age + "]";
-      }
-
-    }
-
     Map<String, String> map = new HashMap<String, String>();
     map.put("name", "zhangsan");
     map.put("age", "10");

@@ -114,7 +114,8 @@ enum SimpleDataSource implements DataSource {
       /*Object proxed = Proxy.newProxyInstance(o.getClass().getClassLoader(),
           new Class[] { Connection.class }, new ConnectionProxy((Connection) o,
               pool));
-      return (Connection) proxed;*/
+       */
+//      return (Connection) proxed;
       return Reflection.newProxy(Connection.class,new ConnectionProxy((Connection) o,pool));
     }
 
