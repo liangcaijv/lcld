@@ -7,8 +7,9 @@ package org.lanqiao.annotation;
  *
  */
 public interface IWorker {
-  @ShowDuration
+  @ShowDuration()
   void logic1();
+
   @ShowDuration(false)
   void logic2();
 

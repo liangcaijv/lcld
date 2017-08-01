@@ -14,6 +14,7 @@ public class Worker implements IWorker {
   @ShowDuration
   public void logic1() {
     try {
+//      睡5秒，模拟程序的消耗时间
       TimeUnit.SECONDS.sleep(5);
     } catch (InterruptedException e) {
       Thread.currentThread().interrupt();
