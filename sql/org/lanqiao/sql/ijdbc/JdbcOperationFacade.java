@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.lanqiao.sql.ijdbc.impl.DataSourceType;
-import org.lanqiao.sql.ijdbc.impl.JdbcUtils;
+import org.lanqiao.sql.ijdbc.impl.JdbcOperationFacadeImpl;
 
 
 /**
@@ -19,7 +19,7 @@ import org.lanqiao.sql.ijdbc.impl.JdbcUtils;
  */
 public interface JdbcOperationFacade {
     static JdbcOperationFacade of(DataSourceType dataSourceType){
-      return JdbcUtils.of(dataSourceType);
+      return JdbcOperationFacadeImpl.of(dataSourceType);
     }
     /**
      * 增删改功能
