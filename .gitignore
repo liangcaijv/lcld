@@ -6,3 +6,8 @@
 *.class
 /target/
 *.iml
+.idea/
+/JavaAllIn.iml
+/no_eclipse/no_eclipse.iml
+/main/main.iml
+/.idea/workspace.xml
