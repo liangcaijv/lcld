@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page name="FT中文网" url="" usable="true" prefix="http://www.ftchinese.com">
+	<params>
+		<content xpath="//div[@class='story-body']" splitpath="//div[@class='pagination-inner']/*[text()='下一页']"/>
+		<autor xpath="//span[@class='story-author']" />
+		<title xpath="//div[@class='story-headline']" />
+		<timeline xpath="span[@class='story-time']" />
+	</params>
+</page>

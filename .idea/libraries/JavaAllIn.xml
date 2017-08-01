@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="JavaAllIn">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/grabage_0.1_nk_src.zip!/" />
+      <root url="jar://$PROJECT_DIR$/grabage_0.2_rl_src.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaAllIn.iml" filepath="$PROJECT_DIR$/JavaAllIn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/main/main.iml" filepath="$PROJECT_DIR$/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/no_eclipse/no_eclipse.iml" filepath="$PROJECT_DIR$/no_eclipse/no_eclipse.iml" />
+    </modules>
+  </component>
+</project>
