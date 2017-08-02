@@ -1,31 +1,31 @@
-public class Diamond{
+public class Case_Diamond {
 	static void execute(int line){
-		// int line = 11;//ÐÐÊý
-		//ÏÈÑ­»·Ç°°ë¶Î  ±ß½çÎªline/2+1
+		// int line = 11;//ï¿½ï¿½ï¿½ï¿½
+		//ï¿½ï¿½Ñ­ï¿½ï¿½Ç°ï¿½ï¿½ï¿½  ï¿½ß½ï¿½Îªline/2+1
 		for(int n=0;n<line/2+1;n++){
-			//¼ÆËã³ö¿Õ¸ñÊý
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¸ï¿½ï¿½ï¿½
 			int kgs = line/2-n;	
 			for(int i=0;i<kgs;i++){
 				System.out.print(" ");
 			}
 			
-			//¼ÆËã³ö*Êý
+			//ï¿½ï¿½ï¿½ï¿½ï¿½*ï¿½ï¿½
 			int xhs = n*2+1;
 			for(int i=0;i<xhs;i++){
 				System.out.print("*");
 			}	
 			System.out.println();
 		}
-		//Ñ­»·ÏÂ°ë¶Î
+		//Ñ­ï¿½ï¿½ï¿½Â°ï¿½ï¿½
 		for(int n=line/2;n>0;n--){
-			//¼ÆËã³ö¿Õ¸ñÊý
+			//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¸ï¿½ï¿½ï¿½
 			int kgs = line/2+1-n;
 			
 			for(int i=0;i<kgs;i++){
 				System.out.print(" ");
 			}
 			
-			//¼ÆËã³ö*Êý
+			//ï¿½ï¿½ï¿½ï¿½ï¿½*ï¿½ï¿½
 			int xhs = 2*n-1;
 			for(int i=0;i<xhs;i++){
 				System.out.print("*");
