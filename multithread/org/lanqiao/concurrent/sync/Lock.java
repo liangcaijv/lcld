@@ -1,25 +1,23 @@
-package org.lanqiao.concurrent;
+package org.lanqiao.concurrent.sync;
 
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
+synchronized 的替代 Lock——ReentrantLock
 
-volatile
-
-用volatile修饰的变量，线程在每次使用变量的时候，都会读取变量修改后的最新值。
-volatile很容易被误用，用来进行原子性操作。
-
-对于volatile修饰的变量，jvm虚拟机只是保证从主内存加载到线程工作内存的值是最新的
  *
  */
-public class Volatile {
-  private static volatile int i = 0;
-
+public class Lock {
+  private static int i = 0;
+  private static ReentrantLock lock = new ReentrantLock();
   private static void inc() throws InterruptedException {
+    lock.lock();
     //这里延迟1毫秒，使得结果明显
     TimeUnit.MILLISECONDS.sleep(1);
     i++;
     System.out.println(i);
+    lock.unlock();
   }
 
   public static void main(String[] args) throws InterruptedException {
@@ -39,3 +37,4 @@ public class Volatile {
 
   }
 }
+

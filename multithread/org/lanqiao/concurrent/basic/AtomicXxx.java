@@ -1,4 +1,4 @@
-package org.lanqiao.concurrent;
+package org.lanqiao.concurrent.basic;
 
 import java.util.concurrent.atomic.AtomicLong;
 
@@ -12,6 +12,8 @@ public class AtomicXxx {
     return number.longValue();
   }
   public static void main(String[] args) {
-    
+    AtomicXxx obj = new AtomicXxx();
+    obj.inc();
+    System.out.println(obj.get());
   }
 }

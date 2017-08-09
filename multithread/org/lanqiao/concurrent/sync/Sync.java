@@ -1,4 +1,4 @@
-package org.lanqiao.concurrent;
+package org.lanqiao.concurrent.sync;
 
 import java.util.concurrent.TimeUnit;
 

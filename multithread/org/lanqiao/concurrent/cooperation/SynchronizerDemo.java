@@ -1,4 +1,4 @@
-package org.lanqiao.concurrent;
+package org.lanqiao.concurrent.cooperation;
 
 import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;
@@ -31,12 +31,13 @@ public class SynchronizerDemo {
     // 闭锁，包含一个计数器，初始化为正数，用来表示事件的数量。
     //    其countDown方法被调用时，代表一个事件已经发生了
     //    而await方法等待计数器归零，此时，所有需要等待的事件都已完成
-    //    假设我们有一个非常大的文件需要处理，我们可以将它分割成若干部分，单个线程处理其中一个部分，我们要等到所有线程都处理完再来对结果进行合并
+    //    假设我们有一个非常大的文件需要处理，我们可以将它分割成若干部分，单个线程处理其中一个部分，
+    // 我们要等到所有线程都处理完再来对结果进行合并
     //    此时就可以使用CountDownLatch来作为同步器
     CountDownLatch countDownLatch = new CountDownLatch(10);
 
     void test() {
-      //      控制线程
+      //      控制线程等待工作线程到达
       new Thread(() -> {
         try {
           countDownLatch.await();
@@ -84,7 +85,7 @@ public class SynchronizerDemo {
         final int NO = index;
         new Thread(() -> {
           try {
-            // 获取许可
+            // 获取许可，许可不够时将阻塞
             semp.acquire();
             System.out.println("Accessing: " + NO);
             Thread.sleep((long) (Math.random() * 10000));
@@ -99,6 +100,9 @@ public class SynchronizerDemo {
     }
   }
 
+  /**
+   * 栅栏：所有工作线程互相等待，直到栅栏开启条件到达，栅栏将通知所有等待的线程同时开启
+   */
   static class CyclicBarrierDemo {
 
     public void test()  {

@@ -1,4 +1,4 @@
-package org.lanqiao.concurrent;
+package org.lanqiao.concurrent.pool;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -10,13 +10,19 @@ import java.util.concurrent.Future;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * ExecutorCompletionService执行系列任务，将每个任务的计算结果都保存在队列中；<br/>
+ * 随后我们可以从队列中take出结果，该方法是阻塞的，队列中有结果才能继续<br/>
+ */
 public class CompletionServiceDemo {
   private static Integer i = 0;
+  // 信号量
   private static Semaphore mutex = new Semaphore(1);
   public static void main(String[] args) {
     ExecutorService executorService = Executors.newCachedThreadPool();
     ExecutorCompletionService<Integer> completionService = new ExecutorCompletionService<Integer>(
         executorService);
+    // 该任务返回i的值
     Callable<Integer> task = new Callable<Integer>() {
       @Override
       public Integer call() throws Exception {

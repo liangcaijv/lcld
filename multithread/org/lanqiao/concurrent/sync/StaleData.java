@@ -1,23 +1,22 @@
-package org.lanqiao.concurrent;
+/**
+ * http://www.cnblogs.com/aigongsi/archive/2012/04/01/2429166.html
+ */
+package org.lanqiao.concurrent.sync;
 
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.locks.ReentrantLock;
 
 /**
-synchronized 的替代 Lock——ReentrantLock
-
+ * @author zhengwei
  *
  */
-public class Lock {
+public class StaleData {
   private static int i = 0;
-  private static ReentrantLock lock = new ReentrantLock();
+
   private static void inc() throws InterruptedException {
-    lock.lock();
     //这里延迟1毫秒，使得结果明显
     TimeUnit.MILLISECONDS.sleep(1);
     i++;
-    System.out.println(i);
-    lock.unlock();
+    // System.out.println(i);
   }
 
   public static void main(String[] args) throws InterruptedException {
@@ -37,4 +36,3 @@ public class Lock {
 
   }
 }
-

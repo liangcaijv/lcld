@@ -1,4 +1,4 @@
-package org.lanqiao.concurrent;
+package org.lanqiao.concurrent.collection;
 
 import java.util.Collections;
 import java.util.HashMap;

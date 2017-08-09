@@ -1,22 +1,25 @@
-/**
- * http://www.cnblogs.com/aigongsi/archive/2012/04/01/2429166.html
- */
-package org.lanqiao.concurrent;
+package org.lanqiao.concurrent.basic;
 
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author zhengwei
+
+volatile
+
+用volatile修饰的变量，线程在每次使用变量的时候，都会读取变量修改后的最新值。
+volatile很容易被误用，用来进行原子性操作。
+
+对于volatile修饰的变量，jvm虚拟机只是保证从主内存加载到线程工作内存的值是最新的
  *
  */
-public class StaleData {
-  private static int i = 0;
+public class Volatile {
+  private static volatile int i = 0;
 
   private static void inc() throws InterruptedException {
     //这里延迟1毫秒，使得结果明显
     TimeUnit.MILLISECONDS.sleep(1);
     i++;
-    // System.out.println(i);
+    System.out.println(i);
   }
 
   public static void main(String[] args) throws InterruptedException {
