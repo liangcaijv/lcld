@@ -1,7 +1,7 @@
 package org.lanqiao.oop.face.cases;
 /**
  * ����̳��ڲ���
- * @author heigong
+ * @author zhengwei
  *
  */
 public class ExtendsInnerClass {
