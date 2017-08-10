@@ -15,11 +15,13 @@ public class D3_functionReference {
 	
 	public static void main(String[] args) {
 		new Thread(D3_functionReference::run).start();
+
 		Stream.generate(D3_functionReference::randomString).limit(5).forEach(e->{
 			System.out.println(e);
 		});
 	}
-	
+
+
 	public static void run(){
 		System.out.println("这是一个run方法");
 	}

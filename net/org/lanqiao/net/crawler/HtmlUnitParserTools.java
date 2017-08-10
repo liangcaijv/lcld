@@ -1,21 +1,25 @@
 package org.lanqiao.net.crawler;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
-import org.lanqiao.net.crawler.config.PageConfig;
-
 import com.gargoylesoftware.htmlunit.NicelyResynchronizingAjaxController;
 import com.gargoylesoftware.htmlunit.SilentCssErrorHandler;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.DomNode;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import org.lanqiao.net.crawler.config.PageConfig;
+
+import java.util.HashSet;
+import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class HtmlUnitParserTools {
 
   private static final String HREF = "href";
+  private static String[] timeFormats = {
+      "\\d\\d\\d\\d-\\d\\d-\\d\\d \\d\\d:\\d\\d:\\d\\d",                          //yyyy-MM-dd hh-mm-ss
+      "\\d\\d\\d\\d-\\d\\d-\\d\\d",
+      /*"\\d\\d\\d\\d年\\d\\d月\\d\\d日\\d\\d:\\d\\d",
+      "\\d\\d\\d\\d年\\d\\d月\\d\\d日"*/};
 
   public static WebClient buildWebClient(boolean isScriptEnables) {
     WebClient client = new WebClient(PageConfig.BROWSER_VERSION);
@@ -37,13 +41,13 @@ public class HtmlUnitParserTools {
 
   /**
    * @param page
-   * @param gsite
+   * @param pageConfig
    */
   public static void removeAdvert(HtmlPage page, PageConfig pageConfig) {
     if (pageConfig.hadAdvert()) {
       HashSet<DomNode> adset = new HashSet<DomNode>();
       for (String advert : pageConfig.getAdverts()) {
-        adset.addAll( page.getByXPath(advert));
+        adset.addAll(page.getByXPath(advert));
       }
       for (DomNode node : adset) {
         try {
@@ -98,11 +102,6 @@ public class HtmlUnitParserTools {
       }
     return str;
   }
-
-  private static String[] timeFormats = {
-      "\\d\\d\\d\\d-\\d\\d-\\d\\d \\d\\d:\\d\\d:\\d\\d",//yyyy-MM-dd hh-mm-ss
-      "\\d\\d\\d\\d-\\d\\d-\\d\\d", "\\d\\d\\d\\d年\\d\\d月\\d\\d日\\d\\d:\\d\\d",
-      "\\d\\d\\d\\d年\\d\\d月\\d\\d日"  };
 
   public static boolean isEmpty(String val) {
     if (val == null || val.trim().equals(""))
