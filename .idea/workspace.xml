@@ -2,37 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4f68af6-df1c-4fae-837c-1899f12665d9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/BarrierDemo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/ProdCons.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/SynMethod.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/AtomicXxx.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/AtomicXxx.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/CompletionServiceDemo.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/pool/CompletionServiceDemo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/ConcurrentCollections.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/collection/ConcurrentCollections.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/DaemonThreads.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/DaemonThreads.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/DeadLock.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/DeadLock.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/EndingThreads.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/EndingThreads.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/ExecutorsDemo.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/pool/ExecutorsDemo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/InConsistent.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/InConsistent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/JoinThreads.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/JoinThreads.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/Lock.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/Lock.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/NoVisibility.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/NoVisibility.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/PCProblem.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/PcUsingSafeSet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/Pc1.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/PcUsingSync.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/Pc2.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/PcUsingBlockingQueue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/ProducerAndConsumer.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/ProducerAndConsumer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/SleepingThreads.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/SleepingThreads.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/StaleData.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/StaleData.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/Sync.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/Sync.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/SynchronizedCollections.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/collection/SynchronizedCollections.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/SynchronizedDemo.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/SynchronizedDemo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/SynchronizerDemo.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/SynchronizerDemo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/Threads.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/Threads.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/ThreadsPriority.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/ThreadsPriority.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/UnSafe.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/StaleData2.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/Volatile.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/Volatile.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/YieldingThreads.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/YieldingThreads.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oop/org/lanqiao/oop/face/cases/ExtendsInnerClass.java" afterPath="$PROJECT_DIR$/oop/org/lanqiao/oop/face/cases/ExtendsInnerClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/DaemonThreads.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/DaemonThreads.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/DeadLock.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/DeadLock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/EndingThreads.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/EndingThreads.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/JoinThreads.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/JoinThreads.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/SleepingThreads.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/SleepingThreads.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/Threads.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/Threads.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/ThreadsPriority.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/ThreadsPriority.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/YieldingThreads.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/basic/YieldingThreads.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/collection/ConcurrentCollections.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/collection/ConcurrentCollections.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/PcUsingBlockingQueue.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/PcUsingBlockingQueue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/PcUsingSafeSet.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/PcUsingSafeSet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/PcUsingSync.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/PcUsingSync.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/InConsistent.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/InConsistent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/NoVisibility.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/NoVisibility.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/StaleData2.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/StaleData2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/SynchronizedDemo.java" afterPath="$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/SynchronizedDemo.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,11 +49,93 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConcurrentHashMap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ConcurrentHashMap.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="98">
               <caret line="265" column="3" lean-forward="true" selection-start-line="265" selection-start-column="3" selection-end-line="265" selection-end-column="3" />
+              <folding>
+                <element signature="e#33810#33853#0" expanded="true" />
+                <element signature="e#35002#35032#0" expanded="true" />
+                <element signature="e#59999#60029#1" expanded="true" />
+                <element signature="e#61753#61783#1" expanded="true" />
+                <element signature="e#61834#61864#1" expanded="true" />
+                <element signature="e#62412#62442#1" expanded="true" />
+                <element signature="e#94368#94398#1" expanded="true" />
+                <element signature="e#98321#98351#1" expanded="true" />
+                <element signature="e#99918#99948#1" expanded="true" />
+                <element signature="e#183746#183776#0" expanded="true" />
+                <element signature="e#197411#197438#0" expanded="true" />
+                <element signature="e#200696#200723#0" expanded="true" />
+                <element signature="e#201707#201734#0" expanded="true" />
+                <element signature="e#202724#202751#0" expanded="true" />
+                <element signature="e#203765#203792#0" expanded="true" />
+                <element signature="e#204834#204861#0" expanded="true" />
+                <element signature="e#206267#206294#0" expanded="true" />
+                <element signature="e#207706#207733#0" expanded="true" />
+                <element signature="e#209156#209183#0" expanded="true" />
+                <element signature="e#210660#210687#0" expanded="true" />
+                <element signature="e#212487#212514#0" expanded="true" />
+                <element signature="e#214320#214347#0" expanded="true" />
+                <element signature="e#216156#216183#0" expanded="true" />
+                <element signature="e#218041#218068#0" expanded="true" />
+                <element signature="e#219551#219581#1" expanded="true" />
+                <element signature="e#220103#220130#0" expanded="true" />
+                <element signature="e#221607#221637#1" expanded="true" />
+                <element signature="e#222163#222190#0" expanded="true" />
+                <element signature="e#223736#223766#1" expanded="true" />
+                <element signature="e#224307#224334#0" expanded="true" />
+                <element signature="e#226184#226214#1" expanded="true" />
+                <element signature="e#226746#226773#0" expanded="true" />
+                <element signature="e#228633#228663#1" expanded="true" />
+                <element signature="e#229199#229226#0" expanded="true" />
+                <element signature="e#231102#231132#1" expanded="true" />
+                <element signature="e#231670#231697#0" expanded="true" />
+                <element signature="e#233613#233643#1" expanded="true" />
+                <element signature="e#234183#234210#0" expanded="true" />
+                <element signature="e#236014#236044#1" expanded="true" />
+                <element signature="e#236442#236469#0" expanded="true" />
+                <element signature="e#238283#238313#1" expanded="true" />
+                <element signature="e#238715#238742#0" expanded="true" />
+                <element signature="e#240572#240602#1" expanded="true" />
+                <element signature="e#241006#241033#0" expanded="true" />
+                <element signature="e#242903#242933#1" expanded="true" />
+                <element signature="e#243339#243366#0" expanded="true" />
+                <element signature="e#245132#245162#1" expanded="true" />
+                <element signature="e#245554#245581#0" expanded="true" />
+                <element signature="e#247357#247387#1" expanded="true" />
+                <element signature="e#247783#247810#0" expanded="true" />
+                <element signature="e#249602#249632#1" expanded="true" />
+                <element signature="e#250030#250057#0" expanded="true" />
+                <element signature="e#251889#251919#1" expanded="true" />
+                <element signature="e#252319#252346#0" expanded="true" />
+                <element signature="e#254101#254131#1" expanded="true" />
+                <element signature="e#254520#254547#0" expanded="true" />
+                <element signature="e#256312#256342#1" expanded="true" />
+                <element signature="e#256735#256762#0" expanded="true" />
+                <element signature="e#258543#258573#1" expanded="true" />
+                <element signature="e#258968#258995#0" expanded="true" />
+                <element signature="e#260816#260846#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SynchronizerDemo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/SynchronizerDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompletionServiceDemo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/pool/CompletionServiceDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="22" column="88" lean-forward="false" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="88" />
               <folding />
             </state>
           </provider>
@@ -179,11 +247,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="151" />
-    <option name="y" value="216" />
-    <option name="width" value="1280" />
-    <option name="height" value="709" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1024" />
+    <option name="height" value="684" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -200,8 +267,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -227,6 +292,13 @@
               <item name="JavaAllIn" type="462c0819:PsiDirectoryNode" />
               <item name="multithread" type="462c0819:PsiDirectoryNode" />
               <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+              <item name="cooperation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaAllIn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaAllIn" type="462c0819:PsiDirectoryNode" />
+              <item name="multithread" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
               <item name="pool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -239,13 +311,6 @@
               <item name="JavaAllIn" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="lanqiao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaAllIn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaAllIn" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="lanqiao" type="462c0819:PsiDirectoryNode" />
-              <item name="etc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaAllIn" type="b2602c69:ProjectViewProjectNode" />
@@ -347,6 +412,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -586,7 +653,8 @@
       <workItem from="1501429351556" duration="775000" />
       <workItem from="1501596265336" duration="851000" />
       <workItem from="1501739182409" duration="2322000" />
-      <workItem from="1502254864641" duration="12472000" />
+      <workItem from="1502254864641" duration="12535000" />
+      <workItem from="1502326809725" duration="2140000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1501758986876</created>
@@ -595,11 +663,18 @@
       <option name="project" value="LOCAL" />
       <updated>1501758986876</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="调整并发包的代码结构，分成几个包">
+      <created>1502276637121</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1502276637121</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39373000" />
+    <option name="totallyTimeSpent" value="41576000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -611,26 +686,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="707" extended-state="6" />
+    <frame x="0" y="23" width="1024" height="684" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35569423" sideWeight="0.4813375" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3576159" sideWeight="0.5186625" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="100" y="123" width="1080" height="507" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47113883" sideWeight="0.4968896" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32781458" sideWeight="0.4968896" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14112903" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29677418" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2682927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24032257" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -640,7 +711,11 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29677418" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35569423" sideWeight="0.4813375" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="123" width="1080" height="507" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -681,7 +756,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="..." />
-    <option name="LAST_COMMIT_MESSAGE" value="..." />
+    <MESSAGE value="调整并发包的代码结构，分成几个包" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整并发包的代码结构，分成几个包" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -706,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -714,7 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -722,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -730,7 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -738,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -746,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -754,23 +824,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/ProdCons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/ProdCons.java" />
     <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/sync/StaleData2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -778,7 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -786,7 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
           <caret line="199" column="24" lean-forward="false" selection-start-line="199" selection-start-column="24" selection-end-line="199" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -794,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="84" column="6" lean-forward="false" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -802,7 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -810,7 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="353" column="21" lean-forward="false" selection-start-line="353" selection-start-column="21" selection-end-line="353" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -818,7 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="380" column="0" lean-forward="false" selection-start-line="380" selection-start-column="0" selection-end-line="380" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -826,7 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="435" column="0" lean-forward="false" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -834,7 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="1953" column="0" lean-forward="false" selection-start-line="1953" selection-start-column="0" selection-end-line="1953" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="388" column="16" lean-forward="false" selection-start-line="388" selection-start-column="16" selection-end-line="388" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,19 +919,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/SynMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-439">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/SynMethod.java" />
     <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/collection/ConcurrentCollections.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,7 +931,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,31 +938,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/BarrierDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/BarrierDemo.java" />
     <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/PcUsingBlockingQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/SynchronizerDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,7 +961,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="60" column="34" lean-forward="false" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,7 +968,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -951,7 +975,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="70" column="62" lean-forward="false" selection-start-line="70" selection-start-column="62" selection-end-line="70" selection-end-column="62" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,7 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="127" column="17" lean-forward="false" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1014,20 +1035,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/pool/CompletionServiceDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/pool/ExecutorsDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="94">
           <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1055,7 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="361" column="14" lean-forward="false" selection-start-line="361" selection-start-column="14" selection-end-line="361" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,7 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="91" column="34" lean-forward="false" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1071,7 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="115" column="34" lean-forward="false" selection-start-line="115" selection-start-column="13" selection-end-line="115" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1079,7 +1089,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="93" column="13" lean-forward="false" selection-start-line="93" selection-start-column="13" selection-end-line="93" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,7 +1104,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="104" column="30" lean-forward="true" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1103,14 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
           <caret line="144" column="19" lean-forward="false" selection-start-line="144" selection-start-column="19" selection-end-line="144" selection-end-column="19" />
-          <folding>
-            <element signature="e#1477#1478#0" expanded="true" />
-            <element signature="e#1533#1534#0" expanded="true" />
-            <element signature="e#1688#1689#0" expanded="true" />
-            <element signature="e#1725#1726#0" expanded="true" />
-            <element signature="e#1870#1871#0" expanded="true" />
-            <element signature="e#1903#1904#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1127,10 +1127,10 @@
         <state relative-caret-position="197">
           <caret line="370" column="23" lean-forward="false" selection-start-line="370" selection-start-column="23" selection-end-line="370" selection-end-column="23" />
           <folding>
-            <element signature="e#10983#10984#0" expanded="true" />
-            <element signature="e#11021#11022#0" expanded="true" />
-            <element signature="e#13575#13576#0" expanded="true" />
-            <element signature="e#13618#13619#0" expanded="true" />
+            <element signature="e#10983#10984#0" expanded="false" />
+            <element signature="e#11021#11022#0" expanded="false" />
+            <element signature="e#13575#13576#0" expanded="false" />
+            <element signature="e#13618#13619#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1139,6 +1139,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="265" column="3" lean-forward="true" selection-start-line="265" selection-start-column="3" selection-end-line="265" selection-end-column="3" />
+          <folding>
+            <element signature="e#33810#33853#0" expanded="true" />
+            <element signature="e#35002#35032#0" expanded="true" />
+            <element signature="e#59999#60029#1" expanded="true" />
+            <element signature="e#61753#61783#1" expanded="true" />
+            <element signature="e#61834#61864#1" expanded="true" />
+            <element signature="e#62412#62442#1" expanded="true" />
+            <element signature="e#94368#94398#1" expanded="true" />
+            <element signature="e#98321#98351#1" expanded="true" />
+            <element signature="e#99918#99948#1" expanded="true" />
+            <element signature="e#183746#183776#0" expanded="true" />
+            <element signature="e#197411#197438#0" expanded="true" />
+            <element signature="e#200696#200723#0" expanded="true" />
+            <element signature="e#201707#201734#0" expanded="true" />
+            <element signature="e#202724#202751#0" expanded="true" />
+            <element signature="e#203765#203792#0" expanded="true" />
+            <element signature="e#204834#204861#0" expanded="true" />
+            <element signature="e#206267#206294#0" expanded="true" />
+            <element signature="e#207706#207733#0" expanded="true" />
+            <element signature="e#209156#209183#0" expanded="true" />
+            <element signature="e#210660#210687#0" expanded="true" />
+            <element signature="e#212487#212514#0" expanded="true" />
+            <element signature="e#214320#214347#0" expanded="true" />
+            <element signature="e#216156#216183#0" expanded="true" />
+            <element signature="e#218041#218068#0" expanded="true" />
+            <element signature="e#219551#219581#1" expanded="true" />
+            <element signature="e#220103#220130#0" expanded="true" />
+            <element signature="e#221607#221637#1" expanded="true" />
+            <element signature="e#222163#222190#0" expanded="true" />
+            <element signature="e#223736#223766#1" expanded="true" />
+            <element signature="e#224307#224334#0" expanded="true" />
+            <element signature="e#226184#226214#1" expanded="true" />
+            <element signature="e#226746#226773#0" expanded="true" />
+            <element signature="e#228633#228663#1" expanded="true" />
+            <element signature="e#229199#229226#0" expanded="true" />
+            <element signature="e#231102#231132#1" expanded="true" />
+            <element signature="e#231670#231697#0" expanded="true" />
+            <element signature="e#233613#233643#1" expanded="true" />
+            <element signature="e#234183#234210#0" expanded="true" />
+            <element signature="e#236014#236044#1" expanded="true" />
+            <element signature="e#236442#236469#0" expanded="true" />
+            <element signature="e#238283#238313#1" expanded="true" />
+            <element signature="e#238715#238742#0" expanded="true" />
+            <element signature="e#240572#240602#1" expanded="true" />
+            <element signature="e#241006#241033#0" expanded="true" />
+            <element signature="e#242903#242933#1" expanded="true" />
+            <element signature="e#243339#243366#0" expanded="true" />
+            <element signature="e#245132#245162#1" expanded="true" />
+            <element signature="e#245554#245581#0" expanded="true" />
+            <element signature="e#247357#247387#1" expanded="true" />
+            <element signature="e#247783#247810#0" expanded="true" />
+            <element signature="e#249602#249632#1" expanded="true" />
+            <element signature="e#250030#250057#0" expanded="true" />
+            <element signature="e#251889#251919#1" expanded="true" />
+            <element signature="e#252319#252346#0" expanded="true" />
+            <element signature="e#254101#254131#1" expanded="true" />
+            <element signature="e#254520#254547#0" expanded="true" />
+            <element signature="e#256312#256342#1" expanded="true" />
+            <element signature="e#256735#256762#0" expanded="true" />
+            <element signature="e#258543#258573#1" expanded="true" />
+            <element signature="e#258968#258995#0" expanded="true" />
+            <element signature="e#260816#260846#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/SynchronizerDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/pool/CompletionServiceDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="22" column="88" lean-forward="false" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="88" />
           <folding />
         </state>
       </provider>
