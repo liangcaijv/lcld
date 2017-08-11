@@ -2,92 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4f68af6-df1c-4fae-837c-1899f12665d9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java7/org/lanqiao/java7/EnvironmentInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java7/org/lanqiao/java7/README.MD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java8/org/lanqiao/java8/D4_Map.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/java8/org/lanqiao/java8/D5_DateApi.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/JavaAllIn.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_34.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_0_18.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_22_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbutils_commons_dbutils_1_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jaxen_jaxen_1_1_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_10.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_cssparser_cssparser_0_9_23.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_27.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_27.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_27.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_dbcp2_2_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_14.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_0_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_5_v20170502.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_5_v20170502.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_5_v20170502.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_5_v20170502.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_5_v20170502.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_5_v20170502.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_5_v20170502.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jdom_jdom2_2_0_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_w3c_css_sac_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JavaAllIn.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main/main.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/no_eclipse/no_eclipse.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/README.MD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/org/lanqiao/commons/dbutils/data.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/org/lanqiao/concurrent/cases/signallamp/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/org/lanqiao/net/crawler/config/ftchinese-content.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/org/lanqiao/net/crawler/config/ftchinese-list.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/org/lanqiao/net/crawler/material.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/org/lanqiao/prj/attendance/users.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/org/lanqiao/prj/firfxui/ui.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/org/lanqiao/sql/dao1/data.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/org/lanqiao/sql/ijdbc/README.MD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/org/lanqiao/sql/ijdbc/impl/jdbc.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/org/lanqiao/sql/util1/README.MD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/org/lanqiao/sql/util1/poolconfig.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/org/lanqiao/xml/dom4j/engineers.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JavaAllIn/org/lanqiao/xml/jaxb/persons.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java8/org/lanqiao/java8/D1_basic.java" afterPath="$PROJECT_DIR$/java8/org/lanqiao/java8/D1_basic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java8/org/lanqiao/java8/D2_functionalInterface.java" afterPath="$PROJECT_DIR$/java8/org/lanqiao/java8/D2_functionalInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java8/org/lanqiao/java8/D3_functionReference.java" afterPath="$PROJECT_DIR$/java8/org/lanqiao/java8/D3_functionReference.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/java8/org/lanqiao/java8/streamApi/D1_withCollections.java" afterPath="$PROJECT_DIR$/java8/org/lanqiao/java8/streamApi/D1_withCollections.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/net/org/lanqiao/net/crawler/HtmlUnitParserTools.java" afterPath="$PROJECT_DIR$/net/org/lanqiao/net/crawler/HtmlUnitParserTools.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/no_eclipse/c3/Case10_NumberTo0XChar_2.java" afterPath="$PROJECT_DIR$/no_eclipse/c3/Case10_NumberTo0XChar_2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/org/lanqiao/commons/beanutils/BeanUtilsDemoTest.java" afterPath="$PROJECT_DIR$/test/org/lanqiao/commons/beanutils/BeanUtilsDemoTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -117,12 +32,12 @@
     <favorites_list name="JavaAllIn" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <state relative-caret-position="130">
+              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -205,7 +120,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="48" />
     <option name="y" value="8" />
     <option name="width" value="1346" />
@@ -226,9 +141,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,50 +215,11 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Maven: com.google.guava:guava:22.0" type="70bed36:NamedLibraryElementNode" />
             </path>
-            <path>
-              <item name="JavaAllIn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.google.guava:guava:22.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="guava-22.0.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaAllIn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.google.guava:guava:22.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="guava-22.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="google" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaAllIn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.google.guava:guava:22.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="guava-22.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="google" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaAllIn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.google.guava:guava:22.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="guava-22.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="google" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="collect" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaAllIn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.google.guava:guava:22.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="guava-22.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="google" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="reflect" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -590,8 +466,17 @@
       <workItem from="1501429351556" duration="775000" />
       <workItem from="1501596265336" duration="2888000" />
       <workItem from="1501686155530" duration="199000" />
-      <workItem from="1502370579156" duration="5699000" />
+      <workItem from="1502370579156" duration="5828000" />
+      <workItem from="1502456172263" duration="17000" />
     </task>
+    <task id="LOCAL-00001" summary="调整java8新特性示范代码">
+      <created>1502376320585</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1502376320585</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -600,7 +485,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22412000" />
+    <option name="totallyTimeSpent" value="22558000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -612,43 +497,73 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="8" width="1346" height="688" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270142" sideWeight="0.49707174" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35559568" sideWeight="0.47291362" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30173776" sideWeight="0.50292826" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="148" y="108" width="1146" height="488" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2967213" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30144405" sideWeight="0.4941435" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32781458" sideWeight="0.4968896" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27760497" sideWeight="0.49095023" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27458397" sideWeight="0.49095023" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24011713" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51509434" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26647145" sideWeight="0.5090498" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51509434" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962406" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35559568" sideWeight="0.47291362" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="148" y="108" width="1146" height="488" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="调整java8新特性示范代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整java8新特性示范代码" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -777,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="118">
           <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="21" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -785,9 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -861,19 +772,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java7/org/lanqiao/java7/CollectionAndArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java7/org/lanqiao/java7/CollectionAndArray.java" />
     <entry file="file://$PROJECT_DIR$/java8/org/lanqiao/java8/D1_basic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,10 +784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#146#147#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -892,7 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -901,7 +799,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="170">
             <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -911,7 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="48" column="21" lean-forward="true" selection-start-line="48" selection-start-column="21" selection-end-line="48" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,7 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-597">
           <caret line="48" column="17" lean-forward="true" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,7 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="449" column="14" lean-forward="false" selection-start-line="449" selection-start-column="14" selection-end-line="449" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,7 +829,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="38" column="72" lean-forward="true" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -943,9 +836,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="39" column="52" lean-forward="false" selection-start-line="39" selection-start-column="52" selection-end-line="39" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -953,10 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding>
-            <element signature="e#1573#1574#0" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -964,7 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="167" column="25" lean-forward="false" selection-start-line="167" selection-start-column="25" selection-end-line="167" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -972,7 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="45" column="48" lean-forward="false" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,7 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,9 +871,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
           <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -998,7 +878,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,9 +885,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#646#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,10 +892,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6">
           <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,14 +899,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        <state relative-caret-position="130">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
           <folding />
         </state>
       </provider>
