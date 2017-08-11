@@ -7,20 +7,20 @@ package org.lanqiao.java8;
  *
  */
 public class D1_basic {
-	public static void main(String[] args) {
-		f1();
-	}
+  public static void main(String[] args) {
+    f1();
+  }
 
-	/*匿名内部类-lamda
-	 * 假如一个类（接口）只有一个方法，我们要使用这个类（接口）创建一个匿名子类，便可以使用lamda表达式
-	 * 
-	 * 
-	 * */
-	private static void f1() {
-		new Thread(()->{
-			System.out.println(1);
-		}).start();
-		
+  /*匿名内部类-lamda
+   * 假如一个类（接口）只有一个方法，我们要使用这个类（接口）创建一个匿名子类，便可以使用lamda表达式
+   *
+   *
+   * */
+  private static void f1() {
+    new Thread( () -> {
+      System.out.println( 1 );
+    } ).start();
+
 /*	等价形式
     new Thread(new Runnable(){
 			@Override
@@ -29,5 +29,5 @@ public class D1_basic {
 			}
 		});
 		*/
-	}
+  }
 }

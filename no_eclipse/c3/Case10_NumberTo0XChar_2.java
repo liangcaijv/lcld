@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Case10_NumberTo0XChar{
+public class Case10_NumberTo0XChar_2 {
 	public static void main(String[] args) {
 		// 定一个特殊场景，然后算出结果
 		// 15 --> F  (char)15? (char)69='F'

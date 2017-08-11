@@ -11,4 +11,5 @@
 /no_eclipse/no_eclipse.iml
 /main/main.iml
 /.idea/workspace.xml
-out/
+out/production/main/
+out/production/no_eclipse/
