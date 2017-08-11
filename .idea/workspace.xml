@@ -48,100 +48,7 @@
     <favorites_list name="JavaAllIn" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ConcurrentHashMap.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="265" column="3" lean-forward="true" selection-start-line="265" selection-start-column="3" selection-end-line="265" selection-end-column="3" />
-              <folding>
-                <element signature="e#33810#33853#0" expanded="true" />
-                <element signature="e#35002#35032#0" expanded="true" />
-                <element signature="e#59999#60029#1" expanded="true" />
-                <element signature="e#61753#61783#1" expanded="true" />
-                <element signature="e#61834#61864#1" expanded="true" />
-                <element signature="e#62412#62442#1" expanded="true" />
-                <element signature="e#94368#94398#1" expanded="true" />
-                <element signature="e#98321#98351#1" expanded="true" />
-                <element signature="e#99918#99948#1" expanded="true" />
-                <element signature="e#183746#183776#0" expanded="true" />
-                <element signature="e#197411#197438#0" expanded="true" />
-                <element signature="e#200696#200723#0" expanded="true" />
-                <element signature="e#201707#201734#0" expanded="true" />
-                <element signature="e#202724#202751#0" expanded="true" />
-                <element signature="e#203765#203792#0" expanded="true" />
-                <element signature="e#204834#204861#0" expanded="true" />
-                <element signature="e#206267#206294#0" expanded="true" />
-                <element signature="e#207706#207733#0" expanded="true" />
-                <element signature="e#209156#209183#0" expanded="true" />
-                <element signature="e#210660#210687#0" expanded="true" />
-                <element signature="e#212487#212514#0" expanded="true" />
-                <element signature="e#214320#214347#0" expanded="true" />
-                <element signature="e#216156#216183#0" expanded="true" />
-                <element signature="e#218041#218068#0" expanded="true" />
-                <element signature="e#219551#219581#1" expanded="true" />
-                <element signature="e#220103#220130#0" expanded="true" />
-                <element signature="e#221607#221637#1" expanded="true" />
-                <element signature="e#222163#222190#0" expanded="true" />
-                <element signature="e#223736#223766#1" expanded="true" />
-                <element signature="e#224307#224334#0" expanded="true" />
-                <element signature="e#226184#226214#1" expanded="true" />
-                <element signature="e#226746#226773#0" expanded="true" />
-                <element signature="e#228633#228663#1" expanded="true" />
-                <element signature="e#229199#229226#0" expanded="true" />
-                <element signature="e#231102#231132#1" expanded="true" />
-                <element signature="e#231670#231697#0" expanded="true" />
-                <element signature="e#233613#233643#1" expanded="true" />
-                <element signature="e#234183#234210#0" expanded="true" />
-                <element signature="e#236014#236044#1" expanded="true" />
-                <element signature="e#236442#236469#0" expanded="true" />
-                <element signature="e#238283#238313#1" expanded="true" />
-                <element signature="e#238715#238742#0" expanded="true" />
-                <element signature="e#240572#240602#1" expanded="true" />
-                <element signature="e#241006#241033#0" expanded="true" />
-                <element signature="e#242903#242933#1" expanded="true" />
-                <element signature="e#243339#243366#0" expanded="true" />
-                <element signature="e#245132#245162#1" expanded="true" />
-                <element signature="e#245554#245581#0" expanded="true" />
-                <element signature="e#247357#247387#1" expanded="true" />
-                <element signature="e#247783#247810#0" expanded="true" />
-                <element signature="e#249602#249632#1" expanded="true" />
-                <element signature="e#250030#250057#0" expanded="true" />
-                <element signature="e#251889#251919#1" expanded="true" />
-                <element signature="e#252319#252346#0" expanded="true" />
-                <element signature="e#254101#254131#1" expanded="true" />
-                <element signature="e#254520#254547#0" expanded="true" />
-                <element signature="e#256312#256342#1" expanded="true" />
-                <element signature="e#256735#256762#0" expanded="true" />
-                <element signature="e#258543#258573#1" expanded="true" />
-                <element signature="e#258968#258995#0" expanded="true" />
-                <element signature="e#260816#260846#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SynchronizerDemo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/cooperation/SynchronizerDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="26" column="3" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CompletionServiceDemo.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/pool/CompletionServiceDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="22" column="88" lean-forward="false" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="88" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -247,7 +154,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1024" />
     <option name="height" value="684" />
@@ -267,7 +174,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -275,31 +182,6 @@
             <path>
               <item name="JavaAllIn" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaAllIn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaAllIn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaAllIn" type="462c0819:PsiDirectoryNode" />
-              <item name="multithread" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaAllIn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaAllIn" type="462c0819:PsiDirectoryNode" />
-              <item name="multithread" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaAllIn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaAllIn" type="462c0819:PsiDirectoryNode" />
-              <item name="multithread" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="cooperation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaAllIn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaAllIn" type="462c0819:PsiDirectoryNode" />
-              <item name="multithread" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
-              <item name="pool" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaAllIn" type="b2602c69:ProjectViewProjectNode" />
@@ -412,8 +294,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -654,7 +536,8 @@
       <workItem from="1501596265336" duration="851000" />
       <workItem from="1501739182409" duration="2322000" />
       <workItem from="1502254864641" duration="12535000" />
-      <workItem from="1502326809725" duration="2140000" />
+      <workItem from="1502326809725" duration="2173000" />
+      <workItem from="1502448752009" duration="20000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1501758986876</created>
@@ -670,11 +553,18 @@
       <option name="project" value="LOCAL" />
       <updated>1502276637121</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="调整并发包的代码结构，分成几个包">
+      <created>1502360682323</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1502360682323</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41576000" />
+    <option name="totallyTimeSpent" value="41629000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -686,7 +576,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1024" height="684" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -696,25 +586,25 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3576159" sideWeight="0.5186625" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47113883" sideWeight="0.4968896" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32781458" sideWeight="0.4968896" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2682927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21693549" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24032257" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5070203" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29677418" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5070203" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35569423" sideWeight="0.4813375" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="100" y="123" width="1080" height="507" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47113883" sideWeight="0.4968896" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -839,6 +729,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -853,6 +744,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="84" column="6" lean-forward="false" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -895,9 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="1955" column="0" lean-forward="false" selection-start-line="1955" selection-start-column="0" selection-end-line="1955" selection-end-column="0" />
-          <folding>
-            <element signature="e#75844#75845#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -946,6 +835,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -953,7 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="106" column="58" lean-forward="false" selection-start-line="106" selection-start-column="58" selection-end-line="106" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,7 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="318" column="59" lean-forward="true" selection-start-line="318" selection-start-column="59" selection-end-line="318" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1016,7 +904,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="136" column="44" lean-forward="false" selection-start-line="136" selection-start-column="44" selection-end-line="136" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1031,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
           <caret line="251" column="44" lean-forward="false" selection-start-line="251" selection-start-column="17" selection-end-line="251" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1049,7 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="374" column="14" lean-forward="false" selection-start-line="374" selection-start-column="14" selection-end-line="374" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,10 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="207" column="13" lean-forward="false" selection-start-line="207" selection-start-column="13" selection-end-line="207" selection-end-column="13" />
-          <folding>
-            <element signature="e#6210#6211#0" expanded="true" />
-            <element signature="e#6267#6268#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,7 +977,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="90" column="33" lean-forward="false" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1118,7 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,82 +1005,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="197">
           <caret line="370" column="23" lean-forward="false" selection-start-line="370" selection-start-column="23" selection-end-line="370" selection-end-column="23" />
-          <folding>
-            <element signature="e#10983#10984#0" expanded="false" />
-            <element signature="e#11021#11022#0" expanded="false" />
-            <element signature="e#13575#13576#0" expanded="false" />
-            <element signature="e#13618#13619#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
+    <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/pool/CompletionServiceDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="265" column="3" lean-forward="true" selection-start-line="265" selection-start-column="3" selection-end-line="265" selection-end-column="3" />
-          <folding>
-            <element signature="e#33810#33853#0" expanded="true" />
-            <element signature="e#35002#35032#0" expanded="true" />
-            <element signature="e#59999#60029#1" expanded="true" />
-            <element signature="e#61753#61783#1" expanded="true" />
-            <element signature="e#61834#61864#1" expanded="true" />
-            <element signature="e#62412#62442#1" expanded="true" />
-            <element signature="e#94368#94398#1" expanded="true" />
-            <element signature="e#98321#98351#1" expanded="true" />
-            <element signature="e#99918#99948#1" expanded="true" />
-            <element signature="e#183746#183776#0" expanded="true" />
-            <element signature="e#197411#197438#0" expanded="true" />
-            <element signature="e#200696#200723#0" expanded="true" />
-            <element signature="e#201707#201734#0" expanded="true" />
-            <element signature="e#202724#202751#0" expanded="true" />
-            <element signature="e#203765#203792#0" expanded="true" />
-            <element signature="e#204834#204861#0" expanded="true" />
-            <element signature="e#206267#206294#0" expanded="true" />
-            <element signature="e#207706#207733#0" expanded="true" />
-            <element signature="e#209156#209183#0" expanded="true" />
-            <element signature="e#210660#210687#0" expanded="true" />
-            <element signature="e#212487#212514#0" expanded="true" />
-            <element signature="e#214320#214347#0" expanded="true" />
-            <element signature="e#216156#216183#0" expanded="true" />
-            <element signature="e#218041#218068#0" expanded="true" />
-            <element signature="e#219551#219581#1" expanded="true" />
-            <element signature="e#220103#220130#0" expanded="true" />
-            <element signature="e#221607#221637#1" expanded="true" />
-            <element signature="e#222163#222190#0" expanded="true" />
-            <element signature="e#223736#223766#1" expanded="true" />
-            <element signature="e#224307#224334#0" expanded="true" />
-            <element signature="e#226184#226214#1" expanded="true" />
-            <element signature="e#226746#226773#0" expanded="true" />
-            <element signature="e#228633#228663#1" expanded="true" />
-            <element signature="e#229199#229226#0" expanded="true" />
-            <element signature="e#231102#231132#1" expanded="true" />
-            <element signature="e#231670#231697#0" expanded="true" />
-            <element signature="e#233613#233643#1" expanded="true" />
-            <element signature="e#234183#234210#0" expanded="true" />
-            <element signature="e#236014#236044#1" expanded="true" />
-            <element signature="e#236442#236469#0" expanded="true" />
-            <element signature="e#238283#238313#1" expanded="true" />
-            <element signature="e#238715#238742#0" expanded="true" />
-            <element signature="e#240572#240602#1" expanded="true" />
-            <element signature="e#241006#241033#0" expanded="true" />
-            <element signature="e#242903#242933#1" expanded="true" />
-            <element signature="e#243339#243366#0" expanded="true" />
-            <element signature="e#245132#245162#1" expanded="true" />
-            <element signature="e#245554#245581#0" expanded="true" />
-            <element signature="e#247357#247387#1" expanded="true" />
-            <element signature="e#247783#247810#0" expanded="true" />
-            <element signature="e#249602#249632#1" expanded="true" />
-            <element signature="e#250030#250057#0" expanded="true" />
-            <element signature="e#251889#251919#1" expanded="true" />
-            <element signature="e#252319#252346#0" expanded="true" />
-            <element signature="e#254101#254131#1" expanded="true" />
-            <element signature="e#254520#254547#0" expanded="true" />
-            <element signature="e#256312#256342#1" expanded="true" />
-            <element signature="e#256735#256762#0" expanded="true" />
-            <element signature="e#258543#258573#1" expanded="true" />
-            <element signature="e#258968#258995#0" expanded="true" />
-            <element signature="e#260816#260846#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="212">
+          <caret line="22" column="88" lean-forward="false" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="88" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1213,11 +1024,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/multithread/org/lanqiao/concurrent/pool/CompletionServiceDemo.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="22" column="88" lean-forward="false" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="88" />
-          <folding />
+        <state relative-caret-position="98">
+          <caret line="265" column="3" lean-forward="true" selection-start-line="265" selection-start-column="3" selection-end-line="265" selection-end-column="3" />
         </state>
       </provider>
     </entry>
