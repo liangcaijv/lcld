@@ -5,24 +5,19 @@ import com.gargoylesoftware.htmlunit.SilentCssErrorHandler;
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.DomNode;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
-import org.lanqiao.net.crawler.config.PageConfig;
 
 import java.util.HashSet;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class HtmlUnitParserTools {
+public class HtmlUnitHelper {
 
   private static final String HREF = "href";
-  private static String[] timeFormats = {
-      "\\d\\d\\d\\d-\\d\\d-\\d\\d \\d\\d:\\d\\d:\\d\\d",                          //yyyy-MM-dd hh-mm-ss
-      "\\d\\d\\d\\d-\\d\\d-\\d\\d",
-      /*"\\d\\d\\d\\d年\\d\\d月\\d\\d日\\d\\d:\\d\\d",
-      "\\d\\d\\d\\d年\\d\\d月\\d\\d日"*/};
+
 
   public static WebClient buildWebClient(boolean isScriptEnables) {
-    WebClient client = new WebClient(PageConfig.BROWSER_VERSION);
+    WebClient client = new WebClient( PageBuilder.BROWSER_VERSION);
     if (isScriptEnables) {
       client.getOptions().setJavaScriptEnabled(true);
       client.getOptions().setCssEnabled(true);
@@ -40,16 +35,16 @@ public class HtmlUnitParserTools {
   }
 
   /**
+   * 移除
    * @param page
-   * @param pageConfig
+   * @param xpath
    */
-  public static void removeAdvert(HtmlPage page, PageConfig pageConfig) {
-    if (pageConfig.hadAdvert()) {
-      HashSet<DomNode> adset = new HashSet<DomNode>();
-      for (String advert : pageConfig.getAdverts()) {
-        adset.addAll(page.getByXPath(advert));
+  public static void remove(HtmlPage page, List<String> xpath) {
+      HashSet<DomNode> adSet = new HashSet<>();
+      for (String advert : xpath) {
+        adSet.addAll(page.getByXPath(advert));
       }
-      for (DomNode node : adset) {
+      for (DomNode node : adSet) {
         try {
           DomNode pnode = node.getParentNode();
           pnode.removeChild(node);
@@ -57,10 +52,14 @@ public class HtmlUnitParserTools {
           ex.printStackTrace();
         }
       }
-    }
-
   }
 
+  /**
+   * 返回xpath制定的超链接的链接
+   * @param page
+   * @param xpath
+   * @return
+   */
   public static String getNodeHref(HtmlPage page, String xpath) {
     if (isEmpty(xpath))
       return "";
@@ -74,6 +73,12 @@ public class HtmlUnitParserTools {
     return "";
   }
 
+  /**
+   * 返回第一个匹配xpath的节点的文本内容
+   * @param page
+   * @param xpath
+   * @return
+   */
   public static String getNodeValue(HtmlPage page, String xpath) {
     if (isEmpty(xpath))
       return "";
@@ -87,6 +92,12 @@ public class HtmlUnitParserTools {
     return "";
   }
 
+  /**
+   * 拼接xpath的内容并返回
+   * @param page
+   * @param xpath
+   * @return
+   */
   public static String getContent(HtmlPage page, String xpath) {
     if (isEmpty(xpath))
       return "";
@@ -94,7 +105,6 @@ public class HtmlUnitParserTools {
     List<DomNode> nodes = page.getByXPath(xpath);
     if (nodes != null && !nodes.isEmpty())
       for (DomNode node : nodes) {
-
         if (isNotEmpty(node.asText())) {
           String content = node.asText().trim();
           str += content;
@@ -113,20 +123,4 @@ public class HtmlUnitParserTools {
     return !isEmpty(val);
   }
 
-  public static String getTimeLine(String str) {
-    if (isEmpty(str))
-      return "";
-
-    String result = "";
-
-    for (String format : timeFormats) {
-      Pattern p = Pattern.compile(format);
-      Matcher m = p.matcher(str);
-      if (m.find()) {
-        result = m.group();
-        break;
-      }
-    }
-    return result;
-  }
 }
