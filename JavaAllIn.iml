@@ -21,6 +21,9 @@
       <sourceFolder url="file://$MODULE_DIR$/xml" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/java7" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/crawl" />
+      <excludeFolder url="file://$MODULE_DIR$/lagou" />
+      <excludeFolder url="file://$MODULE_DIR$/lagouAjax" />
       <excludeFolder url="file://$MODULE_DIR$/main" />
       <excludeFolder url="file://$MODULE_DIR$/no_eclipse" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
