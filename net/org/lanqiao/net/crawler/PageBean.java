@@ -1,4 +1,4 @@
-package org.lanqiao.net.crawler.model;
+package org.lanqiao.net.crawler;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -7,16 +7,16 @@ import java.util.Set;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
-import org.lanqiao.net.crawler.config.PageConfig;
+import org.lanqiao.net.crawler.PageBuilder;
 
 public class PageBean {
-  private PageConfig config;
+  private PageBuilder config;
   private String              name;
   private String              url;                                     // 链接
   private Set<String>         subLinks = new HashSet<String>();        // 包含的子链接
   private Map<String, String> params   = new HashMap<String, String>(); // 关注的页面信息
 
-  public PageBean(PageConfig config) {
+  public PageBean(PageBuilder config) {
     this.config = config;
   }
 
@@ -47,7 +47,7 @@ public class PageBean {
   public Map<String, String> getParams() {
     return params;
   }
-  public PageConfig reuseConfig() {
+  public PageBuilder reuseConfig() {
     return config;
   }
   @Override

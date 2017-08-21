@@ -1,0 +1,10 @@
+.dialog{
+    -fx-font-size: 15px;
+    -fx-font-family: "Microsoft YaHei";
+    -fx-background-color: linear-gradient(#61a2b1, #2A5058);
+}
+
+.dialog button{
+    -fx-font-size: 12px;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+}
