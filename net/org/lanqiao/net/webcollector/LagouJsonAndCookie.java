@@ -33,7 +33,8 @@ public class LagouJsonAndCookie extends BreadthCrawler {
     request.addHeader( "Accept","application/json, text/javascript, */*; q=0.01" );
     request.addHeader( "Referer","https://www.lagou.com/jobs/list_Java?px=default&gj=3%E5%B9%B4%E5%8F%8A%E4%BB%A5%E4%B8%8B&city=%E5%8C%97%E4%BA%AC" );
 
-    return request.responsePage();
+    Page page = request.responsePage();
+    return page;
   }
 
   @Override
