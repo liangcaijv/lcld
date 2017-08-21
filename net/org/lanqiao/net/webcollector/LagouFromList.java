@@ -10,7 +10,7 @@ import cn.edu.hfut.dmic.webcollector.plugin.berkeley.BreadthCrawler;
  * 1.爬虫类继承BreadthCrawler
  * @author hu
  */
-public class LagouFromHomePage extends BreadthCrawler {
+public class LagouFromList extends BreadthCrawler {
   private String regexLink = "https://www.lagou.com/jobs/[0-9]+.html.*";
 
   // 编写构造器
@@ -20,7 +20,7 @@ public class LagouFromHomePage extends BreadthCrawler {
    * @param crawlPath 路径：存放这次爬虫配置的元数据
    * @param autoParse
    */
-  public LagouFromHomePage(String crawlPath, boolean autoParse) {
+  public LagouFromList(String crawlPath, boolean autoParse) {
     super( crawlPath, autoParse );
     /*start page 先添加一个种子页面*/
     // for (int i = 1; i <31 ; i++) {
@@ -102,7 +102,7 @@ public class LagouFromHomePage extends BreadthCrawler {
   }
 
   public static void main(String[] args) throws Exception {
-    LagouFromHomePage crawler = new LagouFromHomePage( "lagou-home-page", true );
+    LagouFromList crawler = new LagouFromList( "lagou-home-page", true );
         /*start crawl with depth of 4*/
     crawler.start( 2 );
   }

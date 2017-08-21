@@ -4,12 +4,11 @@
 .project
 .settings/
 *.class
-/target/
+./target/
 *.iml
-.idea/
-.idea/libraries/
+./.idea/
+./.idea/libraries/
 /no_eclipse/no_eclipse.iml
 /main/main.iml
-/.idea/workspace.xml
-out/production/main/
-out/production/no_eclipse/
+./.idea/workspace.xml
+./out/
