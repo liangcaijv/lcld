@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -268,6 +269,9 @@ public class JdbcOperationFacadeImpl implements JdbcOperationFacade {
   @Override
   public <T> List<T> queryForList(String sql, Class<T> entityClass,
       Object... params) {
+    if (logger.isDebugEnabled()) {
+      logger.debug("[sql]"+sql+",[params]"+Arrays.asList(params).toString());
+    }
     ResultSet rs = null;
     List<T> list = new ArrayList<T>();
     try {

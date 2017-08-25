@@ -6,6 +6,7 @@
 	<groupId>org.lanqiao.java</groupId>
 	<artifactId>allin</artifactId>
 	<version>1.0</version>
+	
 	<packaging>jar</packaging>
   <repositories>
     <!--<repository>-->
