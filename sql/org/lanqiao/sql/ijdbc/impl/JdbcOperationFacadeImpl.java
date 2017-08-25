@@ -284,8 +284,10 @@ public class JdbcOperationFacadeImpl implements JdbcOperationFacade {
       }
       // -----------将结果集转为List end---------------
     } catch (IllegalAccessException | InvocationTargetException | InstantiationException e) {
+      logger.error(e.getMessage()+"[sql==]"+sql);
       throw new RuntimeException(e);
     } catch (SQLException e) {
+      logger.error(e.getMessage()+"[sql==]"+sql);
       throw new DataAccessException(e);
     } finally {
       free(rs);

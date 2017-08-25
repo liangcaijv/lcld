@@ -7,5 +7,5 @@ public enum DataSourceType {
   SIMPLE, 
   DBCP, 
   C3P0,
-  JNDI;
+  JNDI
 }

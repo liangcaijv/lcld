@@ -1,4 +1,4 @@
-package generic.org.lanqiao.generic;
+package org.lanqiao.generic;
 
 import java.util.ArrayList;
 import java.util.List;

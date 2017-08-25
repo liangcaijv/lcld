@@ -26,7 +26,7 @@ import org.lanqiao.sql.ijdbc.exception.UnImplementionException;
  * @author zhengwei
  * 
  */
-enum SimpleDataSource implements DataSource {
+public enum SimpleDataSource implements DataSource {
   me;
   // 阻塞队列，应对多线程请求连接
   private BlockingQueue<Connection> pool = new LinkedBlockingQueue<Connection>();

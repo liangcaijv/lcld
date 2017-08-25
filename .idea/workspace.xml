@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d4f68af6-df1c-4fae-837c-1899f12665d9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crawl/00000000.jdb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crawl/je.info.0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/crawl/je.lck" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lagou/00000000.jdb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lagou/je.info.0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lagou/je.lck" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lagouAjax/00000000.jdb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lagouAjax/je.info.0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lagouAjax/je.lck" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/net/org/lanqiao/net/webcollector/LagouFromHomePage.java" afterPath="$PROJECT_DIR$/net/org/lanqiao/net/webcollector/LagouFromList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="d4f68af6-df1c-4fae-837c-1899f12665d9" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -201,7 +188,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../algorithm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -448,7 +435,7 @@
       <workItem from="1502932959202" duration="648000" />
       <workItem from="1503023707896" duration="121000" />
       <workItem from="1503302778930" duration="209000" />
-      <workItem from="1503303585672" duration="8371000" />
+      <workItem from="1503303585672" duration="9125000" />
     </task>
     <task id="LOCAL-00001" summary="晚上爬虫示例">
       <created>1503309671903</created>
@@ -464,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1503312808202</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完善爬虫示例">
+      <created>1503313095619</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1503313095619</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -473,7 +467,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39520000" />
+    <option name="totallyTimeSpent" value="40274000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -583,7 +577,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="晚上爬虫示例" />
-    <option name="LAST_COMMIT_MESSAGE" value="晚上爬虫示例" />
+    <MESSAGE value="完善爬虫示例" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善爬虫示例" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
