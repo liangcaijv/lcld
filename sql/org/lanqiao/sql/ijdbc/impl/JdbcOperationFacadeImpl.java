@@ -1,5 +1,6 @@
 package org.lanqiao.sql.ijdbc.impl;
 
+import java.io.ByteArrayInputStream;
 import java.lang.reflect.InvocationTargetException;
 import java.sql.Connection;
 import java.sql.Date;
@@ -55,7 +56,9 @@ public class JdbcOperationFacadeImpl implements JdbcOperationFacade {
       if (params[i] instanceof Date) {
         Date date = (Date) params[i];
         stmt.setDate(i + 1, new java.sql.Date(date.getTime()));
-      } else {
+      } else if(params[i] instanceof byte[]){
+        stmt.setBinaryStream(i+1, new ByteArrayInputStream((byte[]) params[i]));  
+      }else {
         stmt.setObject(i + 1, params[i]);
       }
     }
