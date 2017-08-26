@@ -19,6 +19,7 @@ class Config {
 
       ClassLoader classLoader = Config.class.getClassLoader();
       InputStream inStream = classLoader.getResourceAsStream("jdbc.properties");
+    
       props.load(inStream);
       driver = props.getProperty("driver");
       url = props.getProperty("url");
